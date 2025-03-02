@@ -34,7 +34,7 @@ Type /buy For Paid Plan
             resp = f"""<b>
 Limit Reached ⚠️
 
-Message: You Can Check 25 CC at a Time. If You Increase limit Then Buy Customize Plan  to Knock @tevixl.
+Message: You Can Check 25 CC at a Time. If You Increase limit Then Buy Customize Plan  to Knock @nairobiangoon.
 
 Type /buy For Paid Plan
 </b>"""
