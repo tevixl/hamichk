@@ -120,7 +120,7 @@ For Public Group Scraping
 <code>/scrsk username 50</code>
 
 For Private Group Scraping
-<code>/scrsk https://t.me/+aGWRGz 50</code>
+<code>/scrsk https://t.me/+3C_fYRjP2y85YTk0 50</code>
         </b>"""
             await message.reply_text(resp, message.id)
             return
@@ -204,7 +204,7 @@ For Public Group Scraping
 <code>/scrbin bin username 50</code>
 
 For Private Group Scraping
-<code>/scrbin bin https://t.me/+aGWRGz 50</code>
+<code>/scrbin bin https://t.me/+3C_fYRjP2y85YTk050</code>
         </b>"""
             await message.reply_text(resp, message.id)
             return

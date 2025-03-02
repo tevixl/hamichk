@@ -15,7 +15,7 @@ async def delbrod(Client, message):
 
 Message: To Perform This Action, You Need Admin Level Power. 
 
-Contact @tevixlFor More Info ✅</b>"""
+Contact @tevixl For More Info ✅</b>"""
             await message.reply_text(resp, message.id)
             return
 
