@@ -4,8 +4,8 @@ from pyrogram import Client
 with open("FILES/config.json", "r",encoding="utf-8") as f:
     DATA         = json.load(f)
     API_ID       = DATA["API_ID"]
-    API_HASH     = DATA["API_HASH"]
-    BOT_TOKEN    = DATA["BOT_TOKEN"]
+    API_HASH     = "API_HASH"]
+    BOT_TOKEN    = "BOT_TOKEN"]
     PHONE_NUMBER = DATA["PHONE_NUMBER"]
 
 user = Client("Scrapper",

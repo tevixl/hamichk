@@ -9,6 +9,7 @@ fake_useragent
 speedtest-cli
 psutil
 httpcore
-openai
+cryptography
 pytz
+openai
 pycountry
