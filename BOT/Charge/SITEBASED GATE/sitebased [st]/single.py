@@ -9,28 +9,27 @@ from TOOLS.getbin import *
 from .response import *
 from .gate import *
 
-
-@Client.on_message(filters.command("st", [".", "/"]))
+@Client.on_message(filters.command("chk", [".", "/"]))
 async def stripe_auth_cmd(Client, message):
     try:
         user_id = str(message.from_user.id)
         checkall = await check_all_thing(Client, message)
 
-        gateway="NONSK CVV [5$]"
+        gateway = "sitebase [1$]"
 
-        if checkall[0] == False:
+        if not checkall[0]:
             return
 
         role = checkall[1]
         getcc = await getmessage(message)
-        if getcc == False:
+        if not getcc:
             resp = f"""<b>
 Gate Name: {gateway} ♻️
-CMD: /st
+CMD: /chk
 
 Message: No CC Found in your input ❌
 
-Usage: /st cc|mes|ano|cvv</b>"""
+Usage: /chk cc|mes|ano|cvv</b>"""
             await message.reply_text(resp, message.id)
             return
 
@@ -60,11 +59,22 @@ Usage: /st cc|mes|ano|cvv</b>"""
 
         start = time.perf_counter()
         proxies = await get_proxy_format()
-        session = httpx.AsyncClient(
-            timeout=30, proxies=proxies, follow_redirects=True)
+        session = httpx.AsyncClient(timeout=30, proxies=proxies, follow_redirects=True)
+
+        # Create charge and check for None
         result = await create_cvv_charge(fullcc, session)
-        getbin = await get_bin_details(cc, session)
+        if result is None:
+            await message.reply_text("Failed to create charge. Please try again.")
+            return
+
+        getbin = await get_bin_details(cc)
         getresp = await get_charge_resp(result, user_id, fullcc)
+
+        # Check if getresp is valid
+        if not isinstance(getresp, dict) or "status" not in getresp or "response" not in getresp:
+            await message.reply_text("Invalid response from charge function.")
+            return
+
         status = getresp["status"]
         response = getresp["response"]
 
@@ -78,40 +88,34 @@ Usage: /st cc|mes|ano|cvv</b>"""
         await asyncio.sleep(0.5)
         thirdcheck = await Client.edit_message_text(message.chat.id, secondchk.id, thirdresp)
 
-        brand = getbin[0]
-        type = getbin[1]
-        level = getbin[2]
-        bank = getbin[3]
-        country = getbin[4]
-        flag = getbin[5]
-        currency = getbin[6]
+        # Ensure getbin has the expected number of elements
+        if not getbin or len(getbin) < 7:
+            await message.reply_text("Failed to retrieve BIN details.")
+            return
+
+        brand, type, level, bank, country, flag, currency = getbin
 
         finalresp = f"""
-- 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 -  <i>{gateway}</i>
+{status}
 
-- 𝐂𝐚𝐫𝐝 - <code>{fullcc}</code> 
-- 𝐒𝐭𝐚𝐭𝐮𝐬 - {status}
-- 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 - ⤿ <i>{response}</i> ⤾
+𝗖𝗮𝗿𝗱- <code>{fullcc}</code> 
+𝐆𝐚𝐭𝐞𝐰𝐚𝐲- <i>{gateway}</i>
+𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞- ⤿ <i>{response}</i> ⤾
 
-- 𝗜𝗻𝗳𝗼 - {brand} - {type} - {level}
-- 𝐁𝐚𝐧𝐤 - {bank} 🏛  
-- 𝐂𝐨𝐮𝐧𝐭𝐫𝐲 - {country} - {flag} - {currency}
+𝗜𝗻𝗳𝗼- {brand} - {type} - {level}
+𝐁𝐚𝐧𝐤- {bank} 
+𝐂𝐨𝐮𝐧𝐭𝐫𝐲- {country} - {flag} - {currency}
 
-- 𝐂𝐡𝐞𝐜𝐤𝐞𝐝 - <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ⤿ {role} ⤾
-- 𝐎𝐰𝐧𝐞𝐫 - <a href="tg://user?id=6745804180">Toͥnmͣoͫy 〔 Ɠφ 〕</a>
-
-- 𝗧𝗶𝗺𝗲 - {time.perf_counter() - start:0.2f} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
+𝗧𝗶𝗺𝗲- {time.perf_counter() - start:0 .2f} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
 """
         await asyncio.sleep(0.5)
         await Client.edit_message_text(message.chat.id, thirdcheck.id, finalresp)
         await setantispamtime(user_id)
         await deductcredit(user_id)
-        if status == "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅" or status == "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅":
+        if status == "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅":
             await sendcc(finalresp, session)
         await session.aclose()
 
-    except:
+    except Exception as e:
         import traceback
         await error_log(traceback.format_exc())
-
-        
