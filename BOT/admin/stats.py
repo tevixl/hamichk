@@ -48,7 +48,7 @@ Contact Bot Owner @tevixl !</b>"""
                 paid_user += 1
 
         done = f"""<b>
-Tevi Checker ⚡ @tevixlcheckerbot Statistics ✅
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  @tevixlcheckerbot Statistics ✅
 ━━━━━━━━━━━━━━ 
 Total Commands : 52
 Database Type : MongoDB

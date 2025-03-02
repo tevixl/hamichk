@@ -23,7 +23,7 @@ Contact Bot Owner @tevixl !</b>"""
         reg_at   = info["reg_at"]
 
         send_info = f"""<b>
-<b>{message.text.split(" ")[1]}</b> Info on Tevi Checker ⚡
+<b>{message.text.split(" ")[1]}</b> Info on 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 ━━━━━━━━━━━━━━
 ● ID: <code>{message.text.split(" ")[1]}</code>
 ● Profile Link: <a href="tg://user?id={message.text.split(" ")[1]}">Profile Link</a>

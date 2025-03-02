@@ -23,7 +23,7 @@ async def cmd_deluser(Client, message):
 
 Message: To perform this action, you need admin level power. 
 
-Contact @nairobiangoon For More Info ✅</b>"""
+Contact @tevixl For More Info ✅</b>"""
             await message.reply_text(resp, message.id)
             return
 
