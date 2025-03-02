@@ -1,0 +1,14 @@
+pyrogram
+tgcrypto
+stripe
+pymongo
+bs4
+pyromod
+httpx
+fake_useragent
+speedtest-cli
+psutil
+httpcore
+openai
+pytz
+pycountry
