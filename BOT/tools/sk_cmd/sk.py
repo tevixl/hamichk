@@ -221,8 +221,8 @@ More Info:
 {ipcountryresp}
 
 Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
-</b>"""
+Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
+</b>""7447317982
             await addsk(sk)
             await sendsk(resp, session)
 
@@ -248,7 +248,7 @@ Key : <code>{sk}</code>
 Response: EXPIRED KEY ❌
 
 Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 </b>"""
             elif "active" in card_payments:
                 resp = f"""<b>
@@ -272,8 +272,8 @@ More Info:
 {cardcountryresp}
 {ipcountryresp}
 
-Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+Checked By <a href="tg://user?id={message.from_user.idji}"> {message.from_user.first_name}</a> 
+Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 </b>"""
                 await sendsk(resp, session)
 
