@@ -29,6 +29,6 @@ bot = Client(
 if __name__ == "__main__":
     # send_server_alert()
     print("Done Bot Active ✅")
-    print("NOW START BOT ONCE MY MASTER")
+    print("NOW START YOUR BOT")
 
     bot.run()
