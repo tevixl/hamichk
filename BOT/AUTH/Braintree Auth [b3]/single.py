@@ -9,7 +9,6 @@ from TOOLS.getbin import *
 from .response import *
 from .gate import *
 
-
 @Client.on_message(filters.command("b3", [".", "/"]))
 async def b3_auth_cmd(Client, message):
     try:
@@ -18,12 +17,12 @@ async def b3_auth_cmd(Client, message):
 
         gateway = "Braintree Auth"
 
-        if checkall[0] == False:
+        if not checkall[0]:
             return
 
         role = checkall[1]
         getcc = await getmessage(message)
-        if getcc == False:
+        if not getcc:
             resp = f"""<b>
 Gate Name: {gateway} ♻️
 CMD: /b3
@@ -59,35 +58,45 @@ Usage: /b3 cc|mes|ano|cvv</b>"""
         secondchk = await Client.edit_message_text(message.chat.id, firstchk.id, secondresp)
 
         start = time.perf_counter()
-        proxies = await get_proxy_format()  # Pass user_id here
+        proxies = await get_proxy_format()  # Ensure this returns a valid proxy format
 
-        session = httpx.AsyncClient(timeout=30, proxies=proxies, follow_redirects=True)
-        result = await create_braintree_auth(fullcc, session)
-        getbin = await get_bin_details(cc)
-        getresp = await get_charge_resp(result, user_id, fullcc)
-        status = getresp["status"]
-        response = getresp["response"]
+        async with httpx.AsyncClient(timeout=30, proxies=proxies, follow_redirects=True) as session:
+            result = await create_braintree_auth(fullcc, session)
 
-        thirdresp = f"""
+            # Check if result is valid
+            if result is None:
+                await message.reply_text("Failed to create Braintree auth. Please try again.")
+                return
+
+            getresp = await get_charge_resp(result, user_id, fullcc)
+
+            # Validate the response from get_charge_resp
+            if not isinstance(getresp, dict) or "status" not in getresp or "response" not in getresp:
+                await message.reply_text("Invalid response from charge function.")
+                return
+
+            status = getresp["status"]
+            response = getresp["response"]
+
+            thirdresp = f"""
 ↯ Checking...
 
 - 𝗖𝗮𝗿𝗱 - <code>{fullcc}</code> 
 - 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 -  <i>{gateway}</i>
 - 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 - ■■■■
 """
-        await asyncio.sleep(0.5)
-        thirdcheck = await Client.edit_message_text(message.chat.id, secondchk.id, thirdresp)
+            await asyncio.sleep(0.5)
+            thirdcheck = await Client.edit_message_text(message.chat.id, secondchk.id, thirdresp)
 
-        brand = getbin[0]
-        type = getbin[1]
-        level = getbin[2]
-        bank = getbin[3]
-        country = getbin[4]
-        flag = getbin[5]
-        currency = getbin[6]
+            getbin = await get_bin_details(cc)
+            if not getbin or len(getbin) < 7:
+                await message.reply_text("Failed to retrieve BIN details.")
+                return
 
-        # Split the final response into shorter parts
-        finalresp1 = f"""
+            brand, type, level, bank, country, flag, currency = getbin
+
+            # Split the final response into shorter parts
+            finalresp1 = f"""
 {status}
 
 𝗖𝗮𝗿𝗱- <code>{fullcc}</code> 
@@ -100,15 +109,16 @@ Usage: /b3 cc|mes|ano|cvv</b>"""
 
 𝗧𝗶𝗺𝗲- {time.perf_counter() - start:0.2f} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
 """
-        await asyncio.sleep(0.5)
-        await Client.edit_message_text(message.chat.id, thirdcheck.id, finalresp1)
+            await asyncio.sleep(0.5)
+            await Client.edit_message_text(message.chat.id, thirdcheck.id, finalresp1)
 
-        await setantispamtime(user_id)
-        await deductcredit(user_id)
-        if status == "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅" or status == "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅":
-            await sendcc(finalresp1, session)
-        await session.aclose()
+            await setantispamtime(user_id)
+            await deductcredit(user_id)
+
+            if status == "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅":
+                await sendcc(finalresp1, session)
 
     except Exception as e:
         import traceback
         await error_log(traceback.format_exc())
+        await message.reply_text (f"An error occurred: {str(e)}")
