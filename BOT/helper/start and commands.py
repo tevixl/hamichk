@@ -12,7 +12,7 @@ async def cmd_scr(client, message):
         WELCOME_TEXT = f"""
 <b>Hello <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
 
-Tevi Checker  Has plenty of Commands . We Have Auth Gates , Charge Gates , Tools And Other Things .
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Has plenty of Commands . We Have Auth Gates , Charge Gates , Tools And Other Things .
 
 Click Each of Them Below to Know Them Better .</b>
         """
@@ -43,7 +43,7 @@ async def callback_command(client, message):
         WELCOME_TEXT = f"""
 <b>Hello User !
 
-Tevi Checker  Has plenty of Commands . We Have Auth Gates , Charge Gates , Tools And Other Things .
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   Has plenty of Commands . We Have Auth Gates , Charge Gates , Tools And Other Things .
 
 Click Each of Them Below to Know Them Better .</b>
         """
@@ -73,13 +73,13 @@ Click Each of Them Below to Know Them Better .</b>
 async def cmd_start(Client, message):
     try:
         text = """<b>
-Tevi Checker  ■□□
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   ■□□
       </b>"""
         edit = await message.reply_text(text, message.id)
         await asyncio.sleep(0.5)
 
         text = """<b>
-Tevi Checker  ■■■
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   ■■■
      </b> """
         edit = await Client.edit_message_text(message.chat.id, edit.id, text)
         await asyncio.sleep(0.5)
@@ -87,7 +87,7 @@ Tevi Checker  ■■■
         text = f"""
 <b>🌟 Hello <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
 
-<b>Welcome aboard the Tevi Checker! 🚀</b>
+<b>Welcome aboard the 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ ! 🚀</b>
 
 <b>I am your go-to bot, packed with a variety of gates, tools, and commands to enhance your experience. Excited to see what I can do?</b>
 
@@ -179,7 +179,7 @@ Explore My Various Commands And Abilities By Tapping on Commands Button .
     except Exception:
         import traceback
         await error_log(traceback.format_exc())
-Bank
+
 
 async def callback_register(Client, message):
     try:
@@ -243,7 +243,7 @@ async def callback_query(Client, CallbackQuery):
         WELCOME_TEXT = f"""
 <b>Hello User!
 
-Tevi Checker Has plenty of Commands. We Have Auth Gates, Charge Gates, Tools, And Other Things.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Has plenty of Commands. We Have Auth Gates, Charge Gates, Tools, And Other Things.
 
 Click Each of Them Below to Know Them Better.</b>
     """
@@ -266,14 +266,14 @@ Click Each of Them Below to Know Them Better.</b>
 
     if CallbackQuery.data == "close":
         await CallbackQuery.message.delete()
-        await CallbackQuery.message.reply_text("Enjoy Dadu, @tevixlcheckerbot")
+        await CallbackQuery.message.reply_text("Enjoy Bro, ")
 
 
     if CallbackQuery.data == "AUTH":
         AUTH_TEXT = f"""
 <b>Hello User!
 
-Tevi Checker  Auth Gates.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   Auth Gates.
 
 Click on each one below to get to know them better. .</b>
     """
@@ -299,7 +299,7 @@ Click on each one below to get to know them better. .</b>
             reply_markup=InlineKeyboardMarkup(AUTH_BUTTONS))
     if CallbackQuery.data == "Auth2":
         CHARGE_TEXT = """
-🔹 Stripe Auth Gates of Tevi Checker
+🔹 Stripe Auth Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -324,7 +324,7 @@ Total Auth Commands: 1
         )
     if CallbackQuery.data == "Adyen2":
         CHARGE_TEXT = """
-🔹 Adyen Auth Gates of Tevi Checker
+🔹 Adyen Auth Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: Inactive ❌
 
 🚀 Quick Commands Overview:
@@ -349,7 +349,7 @@ Total Auth Commands: 1
         )
     if CallbackQuery.data == "BRAINTREEVBV":
         CHARGE_TEXT = """
-🔹 Braintree Gates of Tevi Checker
+🔹 Braintree Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -375,7 +375,7 @@ Total Auth Commands: 1
 
     if CallbackQuery.data == "BRAINTREEB3":
         CHARGE_TEXT = """
-🔹 Braintree B3 of Tevi Checker
+🔹 Braintree B3 of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -407,7 +407,7 @@ Total Commands: 1
         CHARGE_TEXT = f"""
 <b>Hello User!
 
-Tevi Checker Charge Gates.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Charge Gates.
 
 Click on each one below to get to know them better. .</b>
     """
@@ -434,7 +434,7 @@ Click on each one below to get to know them better. .</b>
             reply_markup=InlineKeyboardMarkup(CHARGE_BUTTONS))
     if CallbackQuery.data == "PAYPAL":
         CHARGE_TEXT = """
-🔹 PayPal Charge Gates of Tevi +Checker
+🔹 PayPal Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ❌ Inactive
 
 🚀 Quick Commands Overview:
@@ -465,7 +465,7 @@ Total Auth Commands: 2
 
     if CallbackQuery.data == "SKBASED":
         CHARGE_TEXT = """
-🔹 Stripe Charge Gates of Tevi Checker
+🔹 Stripe Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -504,7 +504,7 @@ Total Charge Commands: 3
         )
     if CallbackQuery.data == "SITE":
         CHARGE_TEXT = """
-🔹 Site Charge Gates of Tevi Checker
+🔹 Site Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -529,7 +529,7 @@ Total Charge Commands: 1
         )
     if CallbackQuery.data == "BRAINTREE":
         CHARGE_TEXT = """
-🔹 Braintree Charge Gates of Tevi Checker
+🔹 Braintree Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -555,7 +555,7 @@ Total Auth Commands: 1
     if CallbackQuery.data == "SHOPIFY":
         CHARGE_TEXT = """
 
-🔹 Shopify Charge Gates of Tevi Checker
+🔹 Shopify Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -594,7 +594,7 @@ Total Auth Commands: 4
         TOOLS_TEXT = f"""
 <b>Hello User!
 
-Tevi Checker Tools.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Tools.
 
 Click on each one below to get to know them better..</b>
     """
@@ -620,7 +620,7 @@ Click on each one below to get to know them better..</b>
 
     if CallbackQuery.data == "SKSTOOL":
         CHARGE_TEXT = """
-🔹 SK Tools of Tevi Checker
+🔹 SK Tools of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -646,7 +646,7 @@ Total Auth Commands: 4
         )
     if CallbackQuery.data == "SCRAPPER":
         CHARGE_TEXT = """
-🔹 Scrapper Tools Gates of Tevi Checker
+🔹 Scrapper Tools Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -671,7 +671,7 @@ Total Auth Commands: 3
         )
     if CallbackQuery.data == "GENARATORTOOLS":
         CHARGE_TEXT = """
-🔹 Generator Tools of Tevi Checker
+🔹 Generator Tools of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -695,7 +695,7 @@ Total Auth Commands: 2
         )
     if CallbackQuery.data == "BINANDOTHERS":
         CHARGE_TEXT = """
-🔹 Bin and Other Tools Of Tevi Checker
+🔹 Bin and Other Tools Of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -730,7 +730,7 @@ Total Auth Commands: 6
         HELPER_TEXT = f"""
 <b>Hello User!
 
-Tevi Checker  Helper.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Helper.
 
 Click on each one below to get to know them better.</b>
     """
@@ -749,13 +749,13 @@ Click on each one below to get to know them better.</b>
             reply_markup=InlineKeyboardMarkup(CHARGE_BUTTONS))
     if CallbackQuery.data == "INFO":
         CHARGE_TEXT = """
-🔹 Helper Gates of Tevi Checker
+🔹 Helper Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
 
 👤 Account Management:
-   1. Start Bot: /start@tevixlcheckerbot
+   1. Start Bot: /start
    2. Register: /register
    3. User ID: /id
    4. User Info: /info

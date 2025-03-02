@@ -37,7 +37,7 @@ Type /register to continue.
         reg_at = results["reg_at"]
 
         send_info = f"""<b>
-🔍 Your Info on Tevi Checker ⚡
+🔍 Your Info on 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 ━━━━━━━━━━━━━━
 👤 First Name: {first_name}
 🆔 ID: <code>{user_id}</code>

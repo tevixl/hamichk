@@ -6,7 +6,7 @@ from pyrogram import Client, filters
 async def cmd_crdsystem(client, message):
     try:
         resp = f"""<b>
-💳 Tevi Checker ⚡ Credit System
+💳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Credit System
 ━━━━━━━━━━━━━━
 ● AUTH GATES
    ➔ 1 credit per CC check

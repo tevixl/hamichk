@@ -15,7 +15,7 @@ Steps To Get Your Group Authorised:
 ➔ Copy Your Group Username or Group Invite Link .
 ➔ Knock @tevixl And Give Him The Group Username or Group Invite Link
 
-Thats It . Now Once He is got online , He will Approved Your Group ✅ .
+Thats It . Now Once He is got online , He will Approve Your Group ✅ .
 </b>"""
         await message.reply_text(texta, message.id)
 

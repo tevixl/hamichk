@@ -7,13 +7,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 async def cmd_buy(client, message):
     try:
         price_list = """
-📝 <b>Tevi Checker ⚡️ Plans :</b>
+📝 <b>𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ Plans :</b>
 ━━━━━━━━━━━━━━
-● <b>Starter</b> - Unlimited Credits + Premium Access For 1 Week at <b>$7</b>
+● <b>Starter</b> - Unlimited Credits + Premium Access For 1 Week at <b>$500kes</b>
 
-● <b>Silver</b> - Unlimited Credits + Premium Access For 15 Days at <b>$15</b>
+● <b>Silver</b> - Unlimited Credits + Premium Access For 15 Days at <b>$800kes</b>
 
-● <b>Gold</b> - Unlimited Credits + Premium Access For 1 Month at <b>$25</b>
+● <b>Gold</b> - Unlimited Credits + Premium Access For 1 Month at <b>$1500kes</b>
 
 ● <b>Custom Plan</b> - You can buy any custom plan above 1 month...
 
@@ -50,14 +50,14 @@ async def cmd_buy(client, message):
 async def show_payment_methods(client, callback_query):
     try:
         payment_info = """
-📝 <b>Tevi Checker⚡️ Methods:</b>
+📝 <b>𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Methods:</b>
 ━━━━━━━━━━━━━━
 
-💰 <b>BINANCE ID/PAY</b> - <code>568441141</code>
+💰 <b>MPESA NUMBER /PAY</b> - <code>+254785429940</code>
 
-💰 <b>BTC</b> - <code>1DNkMsmKxQhsxSgrBn1x4daDVW3S7mhk1j</code>
+💰 <b>BTC</b> - <code>COMING SOON</code>
 
-💰 <b>USDT [BEP20]</b> - <code>0x6088c53d6f9dd9a42d63d874cb55c443fa3358e9</code>
+💰 <b>USDT [BEP20]</b> - <code>COMING SOON</code>
 
 <i>Note: After completing the payment, click Knock Admin, then send the transaction screenshot with your Telegram ID.</i>
         """
@@ -92,13 +92,13 @@ async def show_payment_methods(client, callback_query):
 async def show_price_list(client, callback_query):
     try:
         price_list = """
-📝 <b>Tevi Checker ⚡️ Plans :</b>
+📝 <b>𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Plans :</b>
 ━━━━━━━━━━━━━━
-● <b>Starter</b> - Unlimited Credits + Premium Access For 1 Week at <b>$7</b>
+● <b>Starter</b> - Unlimited Credits + Premium Access For 1 Week at <b>$500kes</b>
 
-● <b>Silver</b> - Unlimited Credits + Premium Access For 15 Days at <b>$15</b>
+● <b>Silver</b> - Unlimited Credits + Premium Access For 15 Days at <b>$800kes</b>
 
-● <b>Gold</b> - Unlimited Credits + Premium Access For 1 Month at <b>$25</b>
+● <b>Gold</b> - Unlimited Credits + Premium Access For 1 Month at <b>$1500kes</b>
 
 <i>Note: All plans are available for 7, 15, or 30 days. Once your plan expires, you will need to purchase a new one to continue using our services. Please note that all purchases are non-refundable, and you cannot transfer plans to another account.</i>
         """
@@ -133,8 +133,7 @@ async def show_price_list(client, callback_query):
 async def close_message(client, callback_query):
     try:
         await callback_query.message.delete()
-        await callback_query.message.reply_text("Enjoy")
-
+        
     except Exception:
         import traceback
         await error_log(traceback.format_exc())
