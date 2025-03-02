@@ -224,7 +224,7 @@ async def send_alert_to_admin(TOKEN_NAME):
             resp = f"""
 <b>Token Update Required ⚠️
 ━━━━━━━━━━━━━━
-Dear Tevi , 
+Dear Master , 
 Your {TOKEN_NAME} Expired . To Make it working again , it needs to update .
 
 Please Update {TOKEN_NAME} As Soon As Possible ❤️</b>"""

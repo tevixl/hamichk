@@ -69,7 +69,7 @@ Message: We Didn't Find Any CC In @{channel_link}.
 </b>"""
             await message.reply_text(resp, message.id)
         else:
-            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixl.txt"
+            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlcheckerbot.txt"
             with open(file_name, "a", encoding="utf-8") as f:
                 for x in ccs:
                     cc, mes, ano, cvv = x[0], x[1], x[2], x[3]
@@ -95,7 +95,7 @@ CC Scraped ✅
 ● Duplicate Removed: {duplicate}
 ● Scraped By: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {role} ]
 ● Time Taken: {min} Minutes {sec} Seconds
-● Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+● Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 """
             await message.reply_document(document=file_name, caption=caption, reply_to_message_id=message.id)
             os.remove(file_name)
@@ -178,7 +178,7 @@ Message: We Didn't Find Any CC In {channel_title}.
             await message.reply_text(resp, message.id)
 
         else:
-            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlϟ.txt"
+            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlcheckerbot.txt"
             with open(file_name, "a", encoding="UTF-8") as f:
                 for x in ccs:
                     cc, mes, ano, cvv = x[0], x[1], x[2], x[3]
@@ -250,7 +250,7 @@ Message: We Didnt Find Any CC In @{channel_link} .
             await message.reply_text(resp, message.id)
 
         else:
-            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlϟ.txt"
+            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlcheckerbot.txt"
             with open(file_name, "a", encoding="UTF-8") as f:
                 for x in ccs:
                     cc, mes, ano, cvv = x[0], x[1], x[2], x[3]
@@ -275,7 +275,7 @@ CC Scraped ✅
 ● Duplicate Removed: {dublicate}
 ● Scraped By: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {role} ]
 ● Time Taken: {min} Minutes {sec} Seconds
-● Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+● Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 """
             await message.reply_document(document=file_name, caption=caption, reply_to_message_id=message.id)
             os.remove(file_name)
@@ -334,7 +334,7 @@ Message: We Didnt Find Any CC In {channel_title} .
             await message.reply_text(resp, message.id)
 
         else:
-            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlϟ.txt"
+            file_name = f"downloads/{amt}x_CC_Scraped_For_{message.from_user.id}_By_@tevixlcheckerbot.txt"
             with open(file_name, "a", encoding="UTF-8") as f:
                 for x in ccs:
                     cc, mes, ano, cvv = x[0], x[1], x[2], x[3]
@@ -355,7 +355,7 @@ CC Scraped ✅
 ● Duplicate Removed: {dublicate}
 ● Scraped By: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {role} ]
 ● Time Taken: {min} Minutes {sec} Seconds
-● Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
+● Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
 """
             await message.reply_document(document=file_name, caption=caption, reply_to_message_id=message.id)
             os.remove(file_name)
@@ -403,7 +403,7 @@ Message: We Didnt Find Any SK In @{channel_link} .
             await message.reply_text(resp, message.id)
 
         else:
-            file_name = f"downloads/{amt}x_SK_Scraped_For_{message.from_user.id}_By_@tevixlϟ.txt"
+            file_name = f"downloads/{amt}x_SK_Scraped_For_{message.from_user.id}_By_@tevixlcheckerbot.txt"
             with open(file_name, "a", encoding="UTF-8") as f:
                 for x in ccs:
                     f.write(f"{x}\n")
@@ -424,7 +424,7 @@ SK Scraped ✅
 ● SK Found: {amt}
 ● Scraped By: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {role} ]
 ● Time Taken: {min} Minutes {sec} Seconds
-● Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
+● Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
 """
             await message.reply_document(document=file_name, caption=caption, reply_to_message_id=message.id)
             os.remove(file_name)
@@ -480,7 +480,7 @@ Message: We Didnt Find Any SK In {channel_title} .
             await message.reply_text(resp, message.id)
 
         else:
-            file_name = f"downloads/{amt}x_SK_Scraped_For_{message.from_user.id}_By_@tevixlϟ.txt"
+            file_name = f"downloads/{amt}x_SK_Scraped_For_{message.from_user.id}_By_@tevixlcheckerbot.txt"
             with open(file_name, "a", encoding="UTF-8") as f:
                 for x in ccs:
                     f.write(f"{x}\n")
@@ -498,7 +498,7 @@ SK Scraped ✅
 ● Duplicate Removed: {dublicate}
 ● Scraped By: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {role} ]
 ● Time Taken: {min} Minutes {sec} Seconds
-● Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+● Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 """
             await message.reply_document(document=file_name, caption=caption, reply_to_message_id=message.id)
             os.remove(file_name)
