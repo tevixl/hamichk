@@ -11,12 +11,12 @@ async def addbrod(Client, message):
         OWNER_ID    = json.loads(open("FILES/config.json", "r" , encoding="utf-8").read())["OWNER_ID"]
         if user_id not in OWNER_ID:
             resp = """<b>You Don't Have Permission To Use This Command.    
-Contact Bot Owner @tevixl !</b>"""
+Contact Bot Owner @tevixl!</b>"""
             await message.reply_text(resp, message.id)
             return
 
         VBV_TOKEN = str(message.reply_to_message.text).split('"dfReferenceId":"')[1].split('"')[0]
-        await update_token("8119208008:AAGdlLzzvdMSvg5OaNWE8T0645EJwNaozUE", VBV_TOKEN)
+        await update_token("8119208008:AAGDhLJa5lSsxtwQWtVq-Uzgv8FVlbIt2AY", VBV_TOKEN)
 
         resp = f"""<b>
 VBV_TOKEN Successfully Added ✅

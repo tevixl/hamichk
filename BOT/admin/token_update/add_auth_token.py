@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from FUNC.defs import *
 
 async def update_api_token(TOKEN_NAME , TOKEN):
-    TOKEN_DB.update_one({"7447317982": TOKEN_NAME}, {"$set": {"8119208008:AAGdlLzzvdMSvg5OaNWE8T0645EJwNaozUE": TOKEN}})
+    TOKEN_DB.update_one({"id": TOKEN_NAME}, {"$set": {"api_key": TOKEN}})
 
 
 @Client.on_message(filters.command("addauthtoken", [".", "/"]))
@@ -18,7 +18,7 @@ Contact Bot Owner @tevixl !</b>"""
             return
 
         AUTH_TOKEN = str(message.reply_to_message.text)
-        await update_api_token("8119208008:AAGdlLzzvdMSvg5OaNWE8T0645EJwNaozUE", AUTH_TOKEN)
+        await update_api_token("8119208008:AAGDhLJa5lSsxtwQWtVq-Uzgv8FVlbIt2AY", AUTH_TOKEN)
 
         resp = f"""<b>
 Auth API Token Successfully Added ✅
