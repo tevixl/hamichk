@@ -163,7 +163,7 @@ Message: Not Found Any Valid SK From Your Input .</b>"""
             card_payments = account_info.get("card_payments", "N/A")
 
             resp = f"""<b>
-Stripe Key Checked Successfully ✅
+Stripe Key Checked Successfully
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response : SK LIVE 💚
