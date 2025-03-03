@@ -182,7 +182,7 @@ More Info:
 {ipcountryresp}
 
 Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
+Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
             </b>"""
             await addsk(sk)
             await sendsk(resp, session)
@@ -222,7 +222,7 @@ More Info:
 
 Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
 Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
-</b>""7447317982
+</b>"""
             await addsk(sk)
             await sendsk(resp, session)
 
@@ -242,7 +242,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 
             if "inactive" in card_payments or "Invalid API Key" in result:
                 resp = f"""
-Stripe Key Checked Successfully
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: EXPIRED KEY ❌
@@ -272,8 +272,8 @@ More Info:
 {cardcountryresp}
 {ipcountryresp}
 
-Checked By <a href="tg://user?id={message.from_user.idji}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
+Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
+Bot by - <a href="tg://user?id="7447317982">tevixl〔 Ɠφ 〕</a>
 </b>"""
                 await sendsk(resp, session)
 
@@ -302,7 +302,7 @@ Key : <code>{sk}</code>
 Response: EXPIRED KEY ❌
 
 Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 </b>"""
         elif "Your account cannot currently make live charges." in result:
             resp = f"""<b>
@@ -312,7 +312,7 @@ Key : <code>{sk}</code>
 Response: TESTMODE CHARGES ONLY ❌
 
 Checked By <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> 
-Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
+Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 </b> """
         else:
             resp = f"""<b>
