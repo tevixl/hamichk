@@ -242,7 +242,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 
             if "inactive" in card_payments or "Invalid API Key" in result:
                 resp = f"""
-Stripe Key Checked Successfully✅
+Stripe Key Checked Successfully
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: EXPIRED KEY ❌
