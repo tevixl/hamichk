@@ -163,7 +163,7 @@ Message: Not Found Any Valid SK From Your Input .</b>"""
             card_payments = account_info.get("card_payments", "N/A")
 
             resp = f"""<b>
-Stripe Key Checked Successfully
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response : SK LIVE 💚
@@ -202,7 +202,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
             card_payments = account_info.get("card_payments", "N/A")
 
             resp = f"""<b>
-Stripe Key Checked Successfully 
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response : RATE LIMIT ⚠️
@@ -242,7 +242,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 
             if "inactive" in card_payments or "Invalid API Key" in result:
                 resp = f"""
-Stripe Key Checked Successfully 
+Stripe Key Checked Successfully✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: EXPIRED KEY ❌
@@ -252,7 +252,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
 </b>"""
             elif "active" in card_payments:
                 resp = f"""<b>
-Stripe Integration Off 
+Stripe Integration Off ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response : Integration Off ⚠️
@@ -286,7 +286,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl〔 Ɠφ 〕</a>
         
         elif "Invalid API Key" in result:
             resp = f"""<b>
-Stripe Key Checked Successfully 
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: INVALID KEY GIVEN ❌
@@ -296,7 +296,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
 </b>"""
         elif "Expired API Key provided" in result:
             resp = f"""<b>
-Stripe Key Checked Successfully 
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: EXPIRED KEY ❌
@@ -306,7 +306,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
 </b>"""
         elif "Your account cannot currently make live charges." in result:
             resp = f"""<b>
-Stripe Key Checked Successfully 
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: TESTMODE CHARGES ONLY ❌
@@ -316,7 +316,7 @@ Bot by - <a href="tg://user?id=7447317982">tevixl 〔 Ɠφ 〕</a>
 </b> """
         else:
             resp = f"""<b>
-Stripe Key Checked Successfully 
+Stripe Key Checked Successfully ✅
 ━━━━━━━━━━━━━━ 
 Key : <code>{sk}</code>
 Response: {result} ❌
