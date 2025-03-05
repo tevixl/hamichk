@@ -17,9 +17,9 @@ async def mchkfunc(fullcc, user_id):
     retries = 3
     for attempt in range(retries):
         try:
-            #proxies = await get_proxy_format()  # Pass user_id here
+            proxies = await get_proxy_format()  # Pass user_id here
             session = httpx.AsyncClient(
-                timeout=30, follow_redirects=True)
+                timeout=30, proxies=proxies, follow_redirects=True)
             result = await create_braintree_auth(fullcc, session)
             getresp = await get_charge_resp(result, user_id, fullcc)
             response = getresp["response"]
@@ -39,7 +39,7 @@ async def mchkfunc(fullcc, user_id):
                 return f"<code>{fullcc}</code>\n<b>Result - DECLINED ❌</b>\n"
 
 
-@Client.on_message(filters.command("mchk", [".", "/"]))
+@Client.on_message(filters.command("mb3", [".", "/"]))
 def multi(Client, message):
     t1 = threading.Thread(target=bcall, args=(Client, message))
     t1.start()
@@ -87,7 +87,7 @@ Message: You can't check more than 5 CCs at a time.
 
 
         resp = f"""
-- 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 -  Braintree Auth 
+- 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 -  Braintree Auth
 
 - 𝐂𝐂 𝐀𝐦𝐨𝐮𝐧𝐭 -{len(ccs)}
 - 𝐂𝐡𝐞𝐜𝐤𝐞𝐝 - Checking CC For {first_name}
@@ -97,7 +97,7 @@ Message: You can't check more than 5 CCs at a time.
         nov = await message.reply_text(resp, message.id)
 
         text = f"""
-<b>↯ Mass Braintree 3 Auth </b> \n
+<b>↯ Mass Braintree Auth </b> \n
 """
         amt = 0
         start = time.perf_counter()
