@@ -33,7 +33,7 @@ async def generate_redeem_codes(client, message):
         response_text = REDEEM_GENERATED_HEADER
 
         for _ in range(amount):
-            redeem_code = f"TEVI-{gcgenfunc()}{gcgenfunc()}{gcgenfunc()}-PAA"
+            redeem_code = f"TEVI-{gcgenfunc()}{gcgenfunc()}{gcgenfunc()}-GFT"
             await insert_pm(redeem_code)
             response_text += f"➔ <code>{redeem_code}</code>\n"
 
