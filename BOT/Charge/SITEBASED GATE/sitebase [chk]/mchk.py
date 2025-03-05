@@ -17,9 +17,8 @@ async def mchkfunc(fullcc, user_id):
     retries = 3
     for attempt in range(retries):
         try:
-            proxies = await get_proxy_format()
             session = httpx.AsyncClient(
-                timeout=30, proxies=proxies, follow_redirects=True)
+                timeout=30, follow_redirects=True)
             result = await create_cvv_charge(fullcc, session)
             getresp = await get_charge_resp(result, user_id, fullcc)
             response = getresp["response"]
@@ -38,7 +37,7 @@ async def mchkfunc(fullcc, user_id):
                 return f"<code>{fullcc}</code>\n<b>Result - DECLINED ❌</b>\n"
 
 
-@Client.on_message(filters.command("mchk", [".", "/"]))
+@Client.on_message(filters.command("msch", [".", "/"]))
 def multi(Client, message):
     t1 = threading.Thread(target=bcall, args=(Client, message))
     t1.start()

@@ -10,7 +10,7 @@ from .response import *
 from .gate import *
 
 
-@Client.on_message(filters.command("chk", [".", "/"]))
+@Client.on_message(filters.command("sch", [".", "/"]))
 async def stripe_auth_cmd(Client, message):
     try:
         user_id = str(message.from_user.id)
@@ -59,9 +59,9 @@ Usage: /chk cc|mes|ano|cvv</b>"""
         secondchk = await Client.edit_message_text(message.chat.id, firstchk.id, secondresp)
 
         start = time.perf_counter()
-        proxies = await get_proxy_format()
+        # proxies = await get_proxy_format()
         session = httpx.AsyncClient(
-            timeout=30, proxies=proxies, follow_redirects=True)
+            timeout=30, follow_redirects=True)
         sks = await getallsk()
         result = await create_cvv_charge(fullcc, session)
         getbin = await get_bin_details(cc)
