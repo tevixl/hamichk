@@ -1,0 +1,2178 @@
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/100x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 113, in check_invite_link
+    chat_info = await user.get_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/get_chat.py", line 78, in get_chat
+    peer = await self.resolve_peer(chat_id)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 59, in resolve_peer
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 119, in check_invite_link
+    join = await user.join_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/join_chat.py", line 70, in join_chat
+    channel=await self.resolve_peer(chat_id)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 59, in resolve_peer
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 113, in check_invite_link
+    chat_info = await user.get_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/get_chat.py", line 61, in get_chat
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 71, in invoke
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 119, in check_invite_link
+    join = await user.join_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/join_chat.py", line 58, in join_chat
+    chat = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 71, in invoke
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/tools/gen_option/gen.py", line 107, in gen_cmd
+    with open(filename, "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'downloads/20x_CC_Generated_By_7602599524.txt'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/gpt.py", line 76, in cmd_gpt
+    response = await fetch_response(prompt)
+  File "/root/bot/BOT/admin/gpt.py", line 28, in fetch_response
+    response.raise_for_status()  # Raise an exception if response status is not 2xx
+  File "/usr/local/lib/python3.10/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 21, in mchkfunc
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 21, in mchkfunc
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 21, in mchkfunc
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 21, in mchkfunc
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 21, in mchkfunc
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 21, in mchkfunc
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/BRAINTREE GATE/Braintree [ br ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SK BASED GATE/SK Dead Based CVV 1$/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SK BASED GATE/SK Based CCN 1$/single.py", line 63, in ccn_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SK BASED GATE/SK Based CVV 1$/single.py", line 63, in cvv_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 193, in callback_register
+    find = usersdb.find_one({"id": f"{user_id}"}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Traceback (most recent call last):
+  File "/root/bot/TOOLS/check_all_func.py", line 15, in check_all_thing
+    regdata   = await getuserinfo(user_id)
+  File "/root/bot/FUNC/usersdb_func.py", line 20, in getuserinfo
+    return usersdb.find_one({"id": user_id}, {"_id": 0})
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1281, in __next__
+    return self.next()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1257, in next
+    if len(self._data) or self._refresh():
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1828, in _retry_internal
+    ).run()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 2702, in _read
+    with self._client._conn_from_server(self._read_pref, self._server, self._session) as (
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1681, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/mongo_client.py", line 1591, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1346, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1507, in _get_conn
+    conn = self.connect(handler=handler)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 1304, in connect
+    conn.authenticate()
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 646, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/pool.py", line 536, in command
+    return command(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/synchronous/network.py", line 213, in command
+    helpers_shared._check_command_response(
+  File "/usr/local/lib/python3.10/dist-packages/pymongo/helpers_shared.py", line 247, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+
+Stripe Error: Expired API Key provided: sk_live_*********************************************************************************************HDd8wa
+Stripe Error: Expired API Key provided: sk_live_*********************************************************************************************HDd8wa
+Error: Invalid non-printable ASCII character in URL, '\n' at position 125.
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 63, in stripe_auth_cmd
+    session = httpx.AsyncClient(
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebased   [ st ]/single.py", line 66, in stripe_auth_cmd
+    getbin = await get_bin_details(cc, session)
+TypeError: get_bin_details() takes 1 positional argument but 2 were given
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 84, in cmd_start
+    edit = await Client.edit_message_text(message.chat.id, edit.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 84, in cmd_start
+    edit = await Client.edit_message_text(message.chat.id, edit.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 59, in stripe_auth_cmd
+    secondchk = await Client.edit_message_text(message.chat.id, firstchk.id, secondresp)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 113, in check_invite_link
+    chat_info = await user.get_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/get_chat.py", line 61, in get_chat
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 71, in invoke
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 119, in check_invite_link
+    join = await user.join_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/join_chat.py", line 58, in join_chat
+    chat = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 71, in invoke
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 113, in check_invite_link
+    chat_info = await user.get_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/get_chat.py", line 61, in get_chat
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 71, in invoke
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/bot/FUNC/scraperfunc.py", line 119, in check_invite_link
+    join = await user.join_chat(channel_link)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/chats/join_chat.py", line 58, in join_chat
+    chat = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 71, in invoke
+    raise ConnectionError("Client has not been started yet")
+ConnectionError: Client has not been started yet
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebased   [ st ]/single.py", line 66, in stripe_auth_cmd
+    result = await create_cvv_charge(fullcc, session)
+TypeError: get_bin_details() takes 1 positional argument but 2 were given
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebased   [ st ]/single.py", line 66, in stripe_auth_cmd
+    result = await create_cvv_charge(fullcc, session)
+TypeError: get_bin_details() takes 1 positional argument but 2 were given
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 122, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageTooLong: Telegram says: [400 MESSAGE_TOO_LONG] - The message text is too long (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 16, in stripe_auth_cmd
+    user_id = str(message.from_user.id)
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Stripe Error: Request req_Z6nCvsKs7bsmjW: This API call cannot be made with a publishable API key. Please use a secret API key. You can find a list of your API keys at https://dashboard.stripe.com/account/apikeys.
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Stripe Auth/mass.py", line 107, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageTooLong: Telegram says: [400 MESSAGE_TOO_LONG] - The message text is too long (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 63, in callback_command
+    await message.reply(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/types/messages_and_media/message.py", line 970, in reply_text
+    return await self._client.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.flood_420.SlowmodeWait: Telegram says: [420 SLOWMODE_WAIT_X] - A wait of 9 seconds is required to send messages in this chat. (caused by "messages.SendMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 63, in callback_command
+    await message.reply(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/types/messages_and_media/message.py", line 970, in reply_text
+    return await self._client.send_message(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.flood_420.SlowmodeWait: Telegram says: [420 SLOWMODE_WAIT_X] - A wait of 5 seconds is required to send messages in this chat. (caused by "messages.SendMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Clover Auth /single.py", line 16, in pp_auth_cmd
+    user_id = str(message.from_user.id)
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 13, in cmd_scr
+    <b>𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 13, in cmd_scr
+    <b>𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 13, in cmd_scr
+    <b>𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 122, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.flood_420.FloodWait: Telegram says: [420 FLOOD_WAIT_X] - A wait of 28 seconds is required (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Stripe Auth/mass.py", line 107, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageTooLong: Telegram says: [400 MESSAGE_TOO_LONG] - The message text is too long (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Stripe Auth/mass.py", line 107, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageTooLong: Telegram says: [400 MESSAGE_TOO_LONG] - The message text is too long (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 122, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageTooLong: Telegram says: [400 MESSAGE_TOO_LONG] - The message text is too long (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/mchk.py", line 122, in stripe_mass_auth_cmd
+    await Client.edit_message_text(message.chat.id, nov.id, text)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/sync.py", line 74, in coro_wrapper
+    return await asyncio.wrap_future(asyncio.run_coroutine_threadsafe(coroutine, main_loop))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.10/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageTooLong: Telegram says: [400 MESSAGE_TOO_LONG] - The message text is too long (caused by "messages.EditMessage")
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 88, in cmd_start
+    <b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 13, in cmd_scr
+    <b>𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/vbv_cmd/single.py", line 14, in stripe_auth_cmd
+    user_id = message.from_user.id
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/SITEBASED GATE/sitebase [ chk ]/single.py", line 16, in stripe_auth_cmd
+    user_id = str(message.from_user.id)
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/vbv_cmd/single.py", line 14, in stripe_auth_cmd
+    user_id = message.from_user.id
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 13, in cmd_scr
+    <b>𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
+AttributeError: 'NoneType' object has no attribute 'id'
+
+Illegal header value b'Bearer sk_live_z9wt0Q1QS5IcW8vz1pVXA9LK00Yh9fBgG3\n\n\n4'
+Stripe Error: Unexpected error communicating with Stripe.  If this problem persists,
+let us know at support@stripe.com.
+
+(Network error: InvalidHeader: Invalid return character or leading space in header: Authorization)
+Traceback (most recent call last):
+  File "/root/bot/BOT/helper/start and commands.py", line 188, in callback_register
+    user_id = str(message.reply_to_message.from_user.id)
+AttributeError: 'NoneType' object has no attribute 'from_user'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/mass.py", line 23, in mchkfunc
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/token_update/addsk.py", line 54, in update_live_sk_key
+    new_sk_key = str(message.reply_to_message.text)
+AttributeError: 'NoneType' object has no attribute 'text'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/token_update/addsk.py", line 54, in update_live_sk_key
+    new_sk_key = str(message.reply_to_message.text)
+AttributeError: 'NoneType' object has no attribute 'text'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/token_update/addsk.py", line 18, in addbrod
+    await addsk(message.reply_to_message.text)
+AttributeError: 'NoneType' object has no attribute 'text'
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/admin/token_update/addsk.py", line 54, in update_live_sk_key
+    new_sk_key = str(message.reply_to_message.text)
+AttributeError: 'NoneType' object has no attribute 'text'
+
+Stripe Error: Expired API Key provided: sk_live_*********************************************************************************************WsIZW2
+Traceback (most recent call last):
+  File "/root/bot/BOT/AUTH/Braintree Auth [ b3 ]/single.py", line 65, in b3_auth_cmd
+    result = await create_braintree_auth(fullcc, session)
+NameError: name 'create_braintree_auth' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/AUTHNET GATE /single.py", line 66, in authnet_charge_cmd
+    result = await create_cvv_charge(fullcc, session)
+NameError: name 'create_cvv_charge' is not defined
+
+Traceback (most recent call last):
+  File "/root/bot/BOT/Charge/AUTHNET GATE /single.py", line 66, in nt_auth_cmd
+    result = await create_authnet_charge(fullcc, session)
+TypeError: object str can't be used in 'await' expression
+
