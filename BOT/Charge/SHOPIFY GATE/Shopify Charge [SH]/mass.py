@@ -42,7 +42,7 @@ async def mchkfunc(fullcc, user_id):
                 return f"<code>{fullcc}</code>\n<b>Result - DECLINED ❌</b>\n"
 
 
-@Client.on_message(filters.command("msh", [".", "/"]))
+@Client.on_message(filters.command("msho", [".", "/"]))
 def multi(Client, message):
     t1 = threading.Thread(target=bcall, args=(Client, message))
     t1.start()
@@ -72,7 +72,7 @@ async def stripe_mass_auth_cmd(Client, message):
 
         ccs = getcc[1]
         resp = f"""
-- 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 -  SHOPIFY [10$]
+- 𝐆𝐚𝐭𝐞𝐰𝐚𝐲 -  SHOPIFY [20$]
 
 - 𝐂𝐂 𝐀𝐦𝐨𝐮𝐧𝐭 -{len(ccs)}
 - 𝐂𝐡𝐞𝐜𝐤𝐞𝐝 - Checking CC For {first_name}
@@ -82,11 +82,10 @@ async def stripe_mass_auth_cmd(Client, message):
         nov = await message.reply_text(resp, message.id)
 
         text = f"""
-<b>↯ MASS SHOPIFY [10$] [/msh]
+<b>↯ MASS SHOPIFY [20$] [/msho]
 
 Number Of CC Check : [{len(ccs)} / 25]
-</b> \n
-"""
+</b> \n"""
         amt = 0
         start = time.perf_counter()
         # proxies    = await get_proxy_format()

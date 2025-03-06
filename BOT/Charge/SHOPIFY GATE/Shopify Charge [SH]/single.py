@@ -10,13 +10,13 @@ from .response import *
 from .gate import *
 
 
-@Client.on_message(filters.command("sh", [".", "/"]))
-async def sh_auth_cmd(Client, message):
+@Client.on_message(filters.command("sho", [".", "/"]))
+async def sho_auth_cmd(Client, message):
     try:
         user_id = str(message.from_user.id)
         checkall = await check_all_thing(Client, message)
 
-        gateway="Shopify [10$]"
+        gateway="Shopify [20$]"
 
         if checkall[0] == False:
             return
