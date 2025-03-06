@@ -26,13 +26,13 @@ async def get_charge_resp(result, user_id, fullcc):
             response = "order is confirmed 🔥"
             hits = "YES"
 
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif "insufficient_funds" in result.text or "card has insufficient funds." in result.text or "2001 Insufficient Funds" in result.text:
             status = "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅"
             response = "Insufficient Funds"
             hits = "YES"
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif (
                 "INCORRECT_CVC" in result.text
@@ -46,19 +46,19 @@ async def get_charge_resp(result, user_id, fullcc):
             status = "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅"
             response = "Your card's security code is incorrect"
             hits = "YES"
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif "transaction_not_allowed" in result.text:
             status = "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅"
             response = "Card Doesn't Support Purchase"
             hits = "YES"
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif '"cvc_check": "pass"' in result.text:
             status = "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅"
             response = "CVV LIVE"
             hits = "YES"
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif (
             "three_d_secure_redirect" in result.text
@@ -75,13 +75,13 @@ async def get_charge_resp(result, user_id, fullcc):
             status = "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅"
             response = "CVV MATCH - OTP Required"
             hits = "YES"
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif "Your card does not support this type of purchase." in result.text:
             status = "𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅"
             response = "Card Doesn't Support Purchase"
             hits = "YES"
-            await forward_resp(fullcc, "SHOPIFY CHARGE [SHO]", response)
+            await forward_resp(fullcc, "SHOPIFY CHARGE [SH]", response)
 
         elif "ProxyError" in result.text:
             status = "𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝 ❌"
@@ -92,19 +92,28 @@ async def get_charge_resp(result, user_id, fullcc):
 
         elif ("Card was declined" in result.text
                 or "Your card was declined." in result.text
-                or """code":"CARD_DECLINED""" in result.text
+                or "CARD_DECLINED" in result.text
                 or "PAYMENTS_CREDIT_CARD_GENERIC" in result.text
                 or "Card number is incorrect" in result.text
                 or "The shipping options have changed for your order. Review your selection and try again" in result.text
 
               ):
-            response = "CARD DECLINED"
+            status = "𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝 ❌"
+            response = "Card was declined"
+            hits = "NO"
+
 
         elif "Your payment details couldn’t be verified. Check your card details and try again." in result.text:
+            status = "𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝 ❌"
             response = "Your payment details couldn’t be verified"
+            hits = "NO"
+
 
         elif "PAYMENTS_CREDIT_CARD_BASE_EXPIRED" in result.text:
+            status = "𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝 ❌"
             response = "CARD EXPIRE"
+            hits = "NO"
+
 
         else:
             status = "𝐃𝐞𝐜𝐥𝐢𝐧𝐞𝐝 ❌"
