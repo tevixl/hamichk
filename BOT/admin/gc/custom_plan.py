@@ -69,7 +69,7 @@ Expiry : {validity}
 Validity: {days} Days
 Status : Paid ☑️
 Payment Method : {paymnt_method}.
-Receipt ID : MASTER-{receipt_id}
+Receipt ID : 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘-{receipt_id}
 
 This is a receipt for your plan. Save it in a Secure Place. This will help you if anything goes wrong with your plan purchases.
 
