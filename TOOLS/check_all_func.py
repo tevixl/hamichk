@@ -16,11 +16,11 @@ async def check_all_thing(Client , message):
         regdata   = str(regdata)
         if regdata == "None":
             resp = f"""<b>
-Unregistered Users ⚠️
+𝗨𝗻𝗿𝗲𝗴𝗶𝘀𝘁𝗲𝗿𝗲𝗱 𝗨𝘀𝗲𝗿𝘀 ⚠️
 
-Message: You Can't Use Me Unless You Register First .
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗖𝗮𝗻'𝘁 𝗨𝘀𝗲 𝗠𝗲 𝗨𝗻𝗹𝗲𝘀𝘀 𝗬𝗼𝘂 𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿 𝗙𝗶𝗿𝘀𝘁 .
 
-Type /register to Continue
+𝗧𝘆𝗽𝗲 /register 𝘁𝗼 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗲
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False , False
@@ -42,10 +42,12 @@ Type /register to Continue
 
         if chat_type == "ChatType.PRIVATE" and status == "FREE":
             resp = f"""<b>
-Premium Users Required ⚠️
+𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗨𝘀𝗲𝗿𝘀 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 ⚠️
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗢𝗻𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗨𝘀𝗲𝗿𝘀 𝗮𝗿𝗲 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝘁𝗼 𝘂𝘀𝗲 𝗯𝗼𝘁 𝗶𝗻 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 . 𝗔𝗹𝘁𝗵𝗼𝘂𝗴𝗵 𝗬𝗼𝘂 𝗖𝗮𝗻 𝗨𝘀𝗲 𝗕𝗼𝘁 𝗙𝗿𝗲𝗲 𝗛𝗲𝗿𝗲
 
-Message: Only Premium Users are Allowed to use bot in Personal . Although You Can Use Bot Free Here https://t.me/tevixlvv
-Buy Premium Plan Using /buy to Continue
+ 👉 https://t.me/tevixlvv
+
+𝗕𝘂𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗣𝗹𝗮𝗻 𝗨𝘀𝗶𝗻𝗴 /buy 𝘁𝗼 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗲
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False
@@ -56,22 +58,22 @@ Buy Premium Plan Using /buy to Continue
             and checkgroup == "None"
         ):
             resp = f"""<b>
-Unauthorized Chats ⚠️
+𝗨𝗻𝗮𝘂𝘁𝗵𝗼𝗿𝗶𝘇𝗲𝗱 𝗖𝗵𝗮𝘁𝘀 ⚠️
 
-Message: Only Chats Approved By My Master Can Only Use Me . To Get Approved Your Chats Follow The Steps .
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗢𝗻𝗹𝘆 𝗖𝗵𝗮𝘁𝘀 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 𝗕𝘆 𝗠𝘆 𝗠𝗮𝘀𝘁𝗲𝗿 𝗖𝗮𝗻 𝗢𝗻𝗹𝘆 𝗨𝘀𝗲 𝗠𝗲 . 𝗧𝗼 𝗚𝗲𝘁 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁𝘀 𝗙𝗼𝗹𝗹𝗼𝘄 𝗧𝗵𝗲 𝗦𝘁𝗲𝗽𝘀 .
 
-Type /howgp to Know The Step
+𝗧𝘆𝗽𝗲 /howgp 𝘁𝗼 𝗞𝗻𝗼𝘄 𝗧𝗵𝗲 𝗦𝘁𝗲𝗽
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False
 
         if credit < 5:
             resp = f"""<b>
-Insufficient Credits ⚠️
+𝗜𝗻𝘀𝘂𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 ⚠️
 
-Message: You Have Insufficient Credits to Use Me . Recharge Credit For Using Me
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗛𝗮𝘃𝗲 𝗜𝗻𝘀𝘂𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 𝘁𝗼 𝗨𝘀𝗲 𝗠𝗲 . 𝗥𝗲𝗰𝗵𝗮𝗿𝗴𝗲 𝗖𝗿𝗲𝗱𝗶𝘁 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲
 
-Type /buy to Recharge
+𝗧𝘆𝗽𝗲 /buy 𝘁𝗼 𝗥𝗲𝗰𝗵𝗮𝗿𝗴𝗲
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False
@@ -79,11 +81,11 @@ Type /buy to Recharge
         if status == "PREMIUM" and count_antispam < 5:
             after = 5 - count_antispam
             resp = f"""<b>
-Antispam Detected ⚠️
+𝗔𝗻𝘁𝗶𝘀𝗽𝗮𝗺 𝗗𝗲𝘁𝗲𝗰𝘁𝗲𝗱 ⚠️
 
-Message: You Are Doing things Very Fast . Try After {after}s to Use Me Again .
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗔𝗿𝗲 𝗗𝗼𝗶𝗻𝗴 𝘁𝗵𝗶𝗻𝗴𝘀 𝗩𝗲𝗿𝘆 𝗙𝗮𝘀𝘁 . 𝗧𝗿𝘆 𝗔𝗳𝘁𝗲𝗿 {after}s 𝘁𝗼 𝗨𝘀𝗲 𝗠𝗲 𝗔𝗴𝗮𝗶𝗻 .
 
-Reduce Antispam Time /buy Using Paid Plan
+𝗥𝗲𝗱𝘂𝗰𝗲 𝗔𝗻𝘁𝗶𝘀𝗽𝗮𝗺 𝗧𝗶𝗺𝗲 /buy 𝗨𝘀𝗶𝗻𝗴 𝗣𝗮𝗶𝗱 𝗣𝗹𝗮𝗻
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False
@@ -91,11 +93,11 @@ Reduce Antispam Time /buy Using Paid Plan
         if status == "FREE" and count_antispam < 20:
             after = 20 - count_antispam
             resp = f"""<b>
-Antispam Detected ⚠️
+𝗔𝗻𝘁𝗶𝘀𝗽𝗮𝗺 𝗗𝗲𝘁𝗲𝗰𝘁𝗲𝗱 ⚠️
 
-Message: You Are Doing things Very Fast . Try After {after}s to Use Me Again .
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗔𝗿𝗲 𝗗𝗼𝗶𝗻𝗴 𝘁𝗵𝗶𝗻𝗴𝘀 𝗩𝗲𝗿𝘆 𝗙𝗮𝘀𝘁 . 𝗧𝗿𝘆 𝗔𝗳𝘁𝗲𝗿 {after}s 𝘁𝗼 𝗨𝘀𝗲 𝗠𝗲 𝗔𝗴𝗮𝗶𝗻 .
 
-Reduce Antispam Time /buy Using Paid Plan
+𝗥𝗲𝗱𝘂𝗰𝗲 𝗔𝗻𝘁𝗶𝘀𝗽𝗮𝗺 𝗧𝗶𝗺𝗲 /buy 𝗨𝘀𝗶𝗻𝗴 𝗣𝗮𝗶𝗱 𝗣𝗹𝗮𝗻
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False
@@ -122,11 +124,11 @@ async def check_some_thing(Client , message):
         regdata   = str(regdata)
         if regdata == "None":
             resp = f"""<b>
-Unregistered Users ⚠️
+𝗨𝗻𝗿𝗲𝗴𝗶𝘀𝘁𝗲𝗿𝗲𝗱 𝗨𝘀𝗲𝗿𝘀 ⚠️
 
-Message: You Can't Use Me Unless You Register First .
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗖𝗮𝗻'𝘁 𝗨𝘀𝗲 𝗠𝗲 𝗨𝗻𝗹𝗲𝘀𝘀 𝗬𝗼𝘂 𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿 𝗙𝗶𝗿𝘀𝘁 .
 
-Type /register to Continue
+𝗧𝘆𝗽𝗲 /register 𝘁𝗼 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗲
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False
@@ -139,10 +141,12 @@ Type /register to Continue
 
         if chat_type == "ChatType.PRIVATE" and status == "FREE":
             resp = """<b>
-Premium Users Required ⚠️
+𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗨𝘀𝗲𝗿𝘀 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 ⚠️
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗢𝗻𝗹𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗨𝘀𝗲𝗿𝘀 𝗮𝗿𝗲 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝘁𝗼 𝘂𝘀𝗲 𝗯𝗼𝘁 𝗶𝗻 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 . 𝗔𝗹𝘁𝗵𝗼𝘂𝗴𝗵 𝗬𝗼𝘂 𝗖𝗮𝗻 𝗨𝘀𝗲 𝗕𝗼𝘁 𝗙𝗿𝗲𝗲 𝗛𝗲𝗿𝗲
 
-Message: Only Premium Users are Allowed to use bot in Personal . Although You Can Use Bot Free Here https://t.me/tevixlvv
-Buy Premium Plan Using /buy to Continue
+ 👉 https://t.me/tevixlvv
+
+𝗕𝘂𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗣𝗹𝗮𝗻 𝗨𝘀𝗶𝗻𝗴 /buy 𝘁𝗼 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗲
 </b>"""
             await message.reply_text(resp , message_id=message.id)
             return False , False
@@ -153,11 +157,11 @@ Buy Premium Plan Using /buy to Continue
             and checkgroup == "None"
         ):
             resp = f"""<b>
-Unauthorized Chats ⚠️
+𝗨𝗻𝗮𝘂𝘁𝗵𝗼𝗿𝗶𝘇𝗲𝗱 𝗖𝗵𝗮𝘁𝘀 ⚠️
 
-Message: Only Chats Approved By My Master Can Only Use Me . To Get Approved Your Chats Follow The Steps .
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗢𝗻𝗹𝘆 𝗖𝗵𝗮𝘁𝘀 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 𝗕𝘆 𝗠𝘆 𝗠𝗮𝘀𝘁𝗲𝗿 𝗖𝗮𝗻 𝗢𝗻𝗹𝘆 𝗨𝘀𝗲 𝗠𝗲 . 𝗧𝗼 𝗚𝗲𝘁 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁𝘀 𝗙𝗼𝗹𝗹𝗼𝘄 𝗧𝗵𝗲 𝗦𝘁𝗲𝗽𝘀 .
 
-Type /howgp to Know The Step
+𝗧𝘆𝗽𝗲 /howgp 𝘁𝗼 𝗞𝗻𝗼𝘄 𝗧𝗵𝗲 𝗦𝘁𝗲𝗽
 </b>"""
             await message.reply_text(resp ,  reply_to_message_id = message.id)
             return False , False

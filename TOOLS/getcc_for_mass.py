@@ -30,11 +30,11 @@ Message: You Can Check 15 CC at a Time. Buy Plan to Increase Your Limit.
 Type /buy For Paid Plan
 </b>"""
             return False, resp
-        if (role == "PREMIUM" or role == "LIFETIME") and len(ccs) > 25:            
+        if (role == "PREMIUM" or role == "LIFETIME") and len(ccs) > 50000:            
             resp = f"""<b>
 Limit Reached ⚠️
 
-Message: You Can Check 25 CC at a Time. If You Increase limit Then Buy Customize Plan  to Knock @evixl.
+Message: You Can Check 25 CC at a Time. If You Increase limit Then Buy Customize Plan  to Knock @tevixlcheckerbot.
 
 Type /buy For Paid Plan
 </b>"""
@@ -53,6 +53,5 @@ Message: We Are Unable to Find Any CC Details From Your Input. Provide CC's Deta
         import traceback
         await error_log(traceback.format_exc())
         return False, "Try Again Later"
-
 
 
