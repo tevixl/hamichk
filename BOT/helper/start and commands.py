@@ -92,7 +92,7 @@ async def cmd_start(Client, message):
 <b>I am your go-to bot, packed with a variety of gates, tools, and commands to enhance your experience. Excited to see what I can do?</b>
 
 <b>👇 Tap the <i>Register</i> button to begin your journey.</b>
-<b>👇 Discover my full capabilities by tapping the <i>Commands</i> button.</b>
+<b>👇 Discover my full capabilities by tapping the Commands button.</b>
 
 """
         WELCOME_BUTTON = [
