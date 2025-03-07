@@ -26,7 +26,7 @@ Contact Bot Owner @tevixl !
 Amount: {amt}\n</b>"""
         
         for _ in range(amt):
-            GC = f"TEVI-{gcgenfunc()}-{gcgenfunc()}-{gcgenfunc()}-PAA"
+            GC = f"TEVI-{gcgenfunc()}-{gcgenfunc()}-{gcgenfunc()}-GFT"
             await insert_plan2(GC)
             text += f"""
 ➔ <code>{GC}</code>
