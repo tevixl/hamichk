@@ -1,96 +1,47 @@
-import traceback, json
+import json
+from .func import *
 from pyrogram import Client, filters
-from FUNC.usersdb_func import *
-from datetime import date, timedelta
 
-@Client.on_message(filters.command("csplan", [".", "/"]))
-async def cmd_plan1(Client, message):
+# Define a modern UI message for no permission
+NO_PERMISSION_MESSAGE = """<b>
+You don't have permission to use this command.
+Contact the bot owner @tevixl!
+</b>"""
+
+# Define a success message header
+REDEEM_GENERATED_HEADER = """<b>Redeem Generated ✅</b>\n"""
+
+# Define a command to generate redeem codes
+@Client.on_message(filters.command("gc", [".", "/"]))
+async def generate_redeem_codes(client, message):
     try:
         user_id = str(message.from_user.id)
-        OWNER_ID = json.loads(open("FILES/config.json", "r" , encoding="utf-8").read())["OWNER_ID"]
-        if user_id not in OWNER_ID:
-            resp = """<b>You Don't Have Permission To Use This Command.    
-Contact Bot Owner @tevixl !</b>"""
-            await message.reply_text(resp, message.id)
+        with open("FILES/config.json", "r", encoding="utf-8") as config_file:
+            config = json.load(config_file)
+        
+        owner_ids = config.get("OWNER_ID", [])
+
+        if user_id not in owner_ids:
+            await message.reply_text(NO_PERMISSION_MESSAGE, message.id)
             return
 
-        args = message.text.split(" ")
-        if len(args) < 3:
-            resp = """<b>Invalid command format. Usage: /csplan <user_id> <days></b>"""
-            await message.reply_text(resp, message.id)
-            return
-
-        user_id = args[1]
         try:
-            days = int(args[2])
-        except ValueError:
-            resp = """<b>Invalid number of days. Please provide an integer value.</b>"""
-            await message.reply_text(resp, message.id)
-            return
+            amount = int(message.text.split(" ")[1])
+        except (IndexError, ValueError):
+            amount = 10
 
-        paymnt_method = "CRYPTO"
-        registration_check = await getuserinfo(user_id)
-        registration_check = str(registration_check)
-        if registration_check == "None":
-            resp = f"""<b>
-Starter Plan Activation Failed ❌
-━━━━━━━━━━━━━━
-User ID : <a href="tg://user?id={user_id}"> {user_id}</a> 
-Plan Name: Starter Plan For {days} Days 
-Reason : Unregistered Users
+        response_text = REDEEM_GENERATED_HEADER
 
-Status : Failed
-</b>"""
-            await message.reply_text(resp, message.id)
-            return
+        for _ in range(amount):
+            redeem_code = f"TEVI-{gcgenfunc()}{gcgenfunc()}{gcgenfunc()}-PAA"
+            await insert_pm(redeem_code)
+            response_text += f"➔ <code>{redeem_code}</code>\n"
 
-        await check_negetive_credits(user_id)
-        await csplan(user_id)
-        receipt_id = await randgen(len=10)
-        gettoday = str(date.today()).split("-")
-        yy = gettoday[0]
-        mm = gettoday[1]
-        dd = gettoday[2]
-        today = f"{dd}-{mm}-{yy}"
-        getvalidity = str(date.today() + timedelta(days=days)).split("-")
-        yy = getvalidity[0]
-        mm = getvalidity[1]
-        dd = getvalidity[2]
-        validity = f"{dd}-{mm}-{yy}"
+        response_text += """<b>\nYou can redeem this code using this command: /redeem TEVI-XXXX-GFT</b>"""
+        
+        await message.reply_text(response_text, message.id)
 
-        user_resp = f"""<b>
-Thanks For Purchasing Our Starter Plan ✅
-
-ID : <code>{user_id}</code>
-Plan : Custom Plan
-Price : $
-Purchase Date: {today}
-Expiry : {validity}
-Validity: {days} Days
-Status : Paid ☑️
-Payment Method : {paymnt_method}.
-Receipt ID : 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘-{receipt_id}
-
-This is a receipt for your plan. Save it in a Secure Place. This will help you if anything goes wrong with your plan purchases.
-
-Have a Good Day.
-- @tevixlcheckerbot
-</b>"""
-        try:
-            await Client.send_message(user_id, user_resp)
-        except:
-            pass
-
-        ad_resp = f"""<b>
-Starter Plan Activated ✅ 
-━━━━━━━━━━━━━━
-User ID : <a href="tg://user?id={user_id}"> {user_id}</a> 
-Plan Name: Starter Plan For {days} Days 
-Plan Expiry: {validity} 
-
-Status : Successful
-</b>"""
-        await message.reply_text(ad_resp, message.id)
-
-    except:
+    except Exception as e:
+        import traceback
         await error_log(traceback.format_exc())
+

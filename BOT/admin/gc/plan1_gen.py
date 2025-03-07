@@ -12,7 +12,7 @@ async def cmd_gc1(Client, message):
         if user_id not in OWNER_ID:
             resp = """<b>
 You Don't Have Permission To Use This Command.    
-Contact Bot Owner @tevixl !
+Contact Bot Owner @tevixl!
 
 </b>"""
             await message.reply_text(resp, message.id)
@@ -26,7 +26,7 @@ Contact Bot Owner @tevixl !
 Amount: {amt}\n</b>"""
         
         for _ in range(amt):
-            GC = f"TEVI-{gcgenfunc()}-{gcgenfunc()}-{gcgenfunc()}-GFT"
+            GC = f"TEVI-{gcgenfunc()}-{gcgenfunc()}-{gcgenfunc()}-PAA"
             await insert_plan1(GC)
             text += f"""
 ➔ <code>{GC}</code>
