@@ -10,11 +10,11 @@ from FUNC.usersdb_func import *
 async def cmd_scr(client, message):
     try:
         WELCOME_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
+<b>Hello <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> !
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  𝗛𝗮𝘀 𝗽𝗹𝗲𝗻𝘁𝘆 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀. 𝗪𝗲 𝗛𝗮𝘃𝗲 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀, 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀, 𝗧𝗼𝗼𝗹𝘀, 𝗔𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗧𝗵𝗶𝗻𝗴𝘀.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Has plenty of Commands . We Have Auth Gates , Charge Gates , Tools And Other Things .
 
-𝗖𝗹𝗶𝗰𝗸 𝗘𝗮𝗰𝗵 𝗼𝗳 𝗧𝗵𝗲𝗺 𝗕𝗲𝗹𝗼𝘄 𝘁𝗼 𝗞𝗻𝗼𝘄 𝗧𝗵𝗲𝗺 𝗕𝗲𝘁𝘁𝗲𝗿.</b>
+Click Each of Them Below to Know Them Better .</b>
         """
         WELCOME_BUTTONS = [
             [
@@ -41,11 +41,11 @@ async def cmd_scr(client, message):
 async def callback_command(client, message):
     try:
         WELCOME_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 𝗨𝘀𝗲𝗿!
+<b>Hello User !
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   𝗛𝗮𝘀 𝗽𝗹𝗲𝗻𝘁𝘆 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀. 𝗪𝗲 𝗛𝗮𝘃𝗲 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀, 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀, 𝗧𝗼𝗼𝗹𝘀, 𝗔𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗧𝗵𝗶𝗻𝗴𝘀.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   Has plenty of Commands . We Have Auth Gates , Charge Gates , Tools And Other Things .
 
-𝗖𝗹𝗶𝗰𝗸 𝗘𝗮𝗰𝗵 𝗼𝗳 𝗧𝗵𝗲𝗺 𝗕𝗲𝗹𝗼𝘄 𝘁𝗼 𝗞𝗻𝗼𝘄 𝗧𝗵𝗲𝗺 𝗕𝗲𝘁𝘁𝗲𝗿.</b>
+Click Each of Them Below to Know Them Better .</b>
         """
         WELCOME_BUTTONS = [
             [
@@ -73,27 +73,26 @@ async def callback_command(client, message):
 async def cmd_start(Client, message):
     try:
         text = """<b>
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  ■□□□
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   ■□□
       </b>"""
         edit = await message.reply_text(text, message.id)
         await asyncio.sleep(0.5)
 
         text = """<b>
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  ■■■■
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   ■■■
      </b> """
         edit = await Client.edit_message_text(message.chat.id, edit.id, text)
         await asyncio.sleep(0.5)
 
         text = f"""
-<b>🌟 𝗛𝗲𝗹𝗹𝗼 <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
+<b>🌟 Hello <a href="tg://user?id={message.from_user.id}">{message.from_user.first_name}</a>!</b>
 
-<b>𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗮𝗯𝗼𝗮𝗿𝗱 𝘁𝗵𝗲 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️! 🚀</b>
+<b>Welcome aboard the 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ ! 🚀</b>
 
-<b>𝗜 𝗮𝗺 𝘆𝗼𝘂𝗿 𝗴𝗼-𝘁𝗼 𝗯𝗼𝘁, 𝗽𝗮𝗰𝗸𝗲𝗱 𝘄𝗶𝘁𝗵 𝗮 𝘃𝗮𝗿𝗶𝗲𝘁𝘆 𝗼𝗳 𝗴𝗮𝘁𝗲𝘀, 𝘁𝗼𝗼𝗹𝘀, 𝗮𝗻𝗱 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗼 𝗲𝗻𝗵𝗮𝗻𝗰𝗲 𝘆𝗼𝘂𝗿 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲. 𝗘𝘅𝗰𝗶𝘁𝗲𝗱 𝘁𝗼 𝘀𝗲𝗲 𝘄𝗵𝗮𝘁 𝗜 𝗰𝗮𝗻 𝗱𝗼?</b>
+<b>I am your go-to bot, packed with a variety of gates, tools, and commands to enhance your experience. Excited to see what I can do?</b>
 
-<b>👇 𝗧𝗮𝗽 𝘁𝗵𝗲 <i>𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿</i> 𝗯𝘂𝘁𝘁𝗼𝗻 𝘁𝗼 𝗯𝗲𝗴𝗶𝗻 𝘆𝗼𝘂𝗿 𝗷𝗼𝘂𝗿𝗻𝗲𝘆.</b>
-<b>👇 𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿 𝗺𝘆 𝗳𝘂𝗹𝗹 𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗯𝘆   
-𝘁𝗮𝗽𝗽𝗶𝗻𝗴 𝘁𝗵𝗲 <i>𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀</i> 𝗯𝘂𝘁𝘁𝗼𝗻.</b>
+<b>👇 Tap the <i>Register</i> button to begin your journey.</b>
+<b>👇 Discover my full capabilities by tapping the <i>Commands</i> button.</b>
 
 """
         WELCOME_BUTTON = [
@@ -154,26 +153,25 @@ async def cmd_register(Client, message):
         if registration_check == "None":
             await register_user(user_id, username, antispam_time, reg_at)
             resp = f"""<b>
-𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹 ♻️ 
+Registration Successfull ♻️
 ━━━━━━━━━━━━━━
-● 𝗡𝗮𝗺𝗲: {message.from_user.first_name}
-● 𝗨𝘀𝗲𝗿 𝗜𝗗: {message.from_user.id}
-● 𝗥𝗼𝗹𝗲: Free
-● 𝗖𝗿𝗲𝗱𝗶𝘁𝘀: 50
+● Name: {message.from_user.first_name}
+● User ID: {message.from_user.id}
+● Role: Free
+● Credits: 50
 
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗚𝗼𝘁 50 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 𝗮𝘀 𝗿𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗯𝗼𝗻𝘂𝘀 . 𝗧𝗼 𝗞𝗻𝗼𝘄 𝗖𝗿𝗲𝗱𝗶𝘁𝘀  𝗦𝘆𝘀𝘁𝗲𝗺 /howcrd
+Message: You Got 50 Credits as a registration bonus . To Know Credits System /howcrd .
 
-
-𝗘𝘅𝗽𝗹𝗼𝗿𝗲 𝗠𝘆 𝗩𝗮𝗿𝗶𝗼𝘂𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗔𝗻𝗱 𝗔𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗕𝘆 𝗧𝗮𝗽𝗽𝗶𝗻𝗴 𝗼𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀         𝗕𝘂𝘁𝘁𝗼𝗻.  
+Explore My Various Commands And Abilities By Tapping on Commands Button .  
             </b>"""
 
         else:
             resp = f"""<b>
-𝗔𝗹𝗿𝗲𝗮𝗱𝘆 𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿𝗲𝗱 ⚠️
+Already Registered ⚠️
 
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗮𝗿𝗲 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗿𝗲𝗴𝗶𝘀𝘁𝗲𝗿𝗲𝗱 𝗶𝗻 𝗼𝘂𝗿 𝗯𝗼𝘁 . 𝗡𝗼 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗿𝗲𝗴𝗶𝘀𝘁𝗲𝗿 𝗻𝗼𝘄 
+Message: You are already registered in our bot . No need to register now .
 
-𝗘𝘅𝗽𝗹𝗼𝗿𝗲 𝗠𝘆 𝗩𝗮𝗿𝗶𝗼𝘂𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗔𝗻𝗱 𝗔𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗕𝘆 𝗧𝗮𝗽𝗽𝗶𝗻𝗴 𝗼𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗕𝘂𝘁𝘁𝗼𝗻  
+Explore My Various Commands And Abilities By Tapping on Commands Button .  
             </b>"""
 
         await message.reply_text(resp, reply_markup=InlineKeyboardMarkup(WELCOME_BUTTON))
@@ -204,26 +202,25 @@ async def callback_register(Client, message):
         if registration_check == "None":
             await register_user(user_id, username, antispam_time, reg_at)
             resp = f"""<b>
-𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹 ♻️ 
+Registration Successfull ♻️
 ━━━━━━━━━━━━━━
-● 𝗡𝗮𝗺𝗲: {message.from_user.first_name}
-● 𝗨𝘀𝗲𝗿 𝗜𝗗: {message.from_user.id}
-● 𝗥𝗼𝗹𝗲: Free
-● 𝗖𝗿𝗲𝗱𝗶𝘁𝘀: 50
+● Name: {message.reply_to_message.from_user.first_name}
+● User ID: {user_id}
+● Role: Free
+● Credits: 50
 
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗚𝗼𝘁 50 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 𝗮𝘀 𝗿𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗯𝗼𝗻𝘂𝘀 . 𝗧𝗼 𝗞𝗻𝗼𝘄 𝗖𝗿𝗲𝗱𝗶𝘁𝘀  𝗦𝘆𝘀𝘁𝗲𝗺 /howcrd .
+Message: You Got 50 Credits as a registration bonus . To Know Credits System /howcrd .
 
-
-𝗘𝘅𝗽𝗹𝗼𝗿𝗲 𝗠𝘆 𝗩𝗮𝗿𝗶𝗼𝘂𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗔𝗻𝗱 𝗔𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗕𝘆 𝗧𝗮𝗽𝗽𝗶𝗻𝗴 𝗼𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀         𝗕𝘂𝘁𝘁𝗼𝗻.  
+Explore My Various Commands And Abilities By Tapping on Commands Button .  
             </b>"""
 
         else:
             resp = f"""<b>
-𝗔𝗹𝗿𝗲𝗮𝗱𝘆 𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿𝗲𝗱 ⚠️
+Already Registered ⚠️
 
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲: 𝗬𝗼𝘂 𝗮𝗿𝗲 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗿𝗲𝗴𝗶𝘀𝘁𝗲𝗿𝗲𝗱 𝗶𝗻 𝗼𝘂𝗿 𝗯𝗼𝘁 . 𝗡𝗼 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗿𝗲𝗴𝗶𝘀𝘁𝗲𝗿 𝗻𝗼𝘄 
+Message: You are already registered in our bot . No need to register now .
 
-𝗘𝘅𝗽𝗹𝗼𝗿𝗲 𝗠𝘆 𝗩𝗮𝗿𝗶𝗼𝘂𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗔𝗻𝗱 𝗔𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗕𝘆 𝗧𝗮𝗽𝗽𝗶𝗻𝗴 𝗼𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗕𝘂𝘁𝘁𝗼𝗻  
+Explore My Various Commands And Abilities By Tapping on Commands Button .  
             </b>"""
 
         await message.reply_text(resp, message.id, reply_markup=InlineKeyboardMarkup(WELCOME_BUTTON))
@@ -244,11 +241,11 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "HOME":
         WELCOME_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 User!
+<b>Hello User!
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 𝗛𝗮𝘀 𝗽𝗹𝗲𝗻𝘁𝘆 𝗼𝗳 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀.𝗪𝗲 𝗛𝗮𝘃𝗲 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀, 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀,𝗧𝗼𝗼𝗹𝘀 𝗔𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗧𝗵𝗶𝗻𝗴𝘀.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Has plenty of Commands. We Have Auth Gates, Charge Gates, Tools, And Other Things.
 
-𝗖𝗹𝗶𝗰𝗸 𝗘𝗮𝗰𝗵 𝗼𝗳 𝗧𝗵𝗲𝗺 𝗕𝗲𝗹𝗼𝘄 𝘁𝗼 𝗞𝗻𝗼𝘄 𝗧𝗵𝗲𝗺 𝗕𝗲𝘁𝘁𝗲𝗿.</b>
+Click Each of Them Below to Know Them Better.</b>
     """
         WELCOME_BUTTONS = [
             [
@@ -269,52 +266,50 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "close":
         await CallbackQuery.message.delete()
-        await CallbackQuery.message.reply_text("𝗘𝗻𝗷𝗼𝘆 𝗗𝘂𝗱𝗲, @PharaohCHK")
+        await CallbackQuery.message.reply_text("Enjoy Bro, ")
 
 
     if CallbackQuery.data == "AUTH":
         AUTH_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 𝗨𝘀𝗲𝗿!
+<b>Hello User!
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️   Auth Gates.
 
-𝗖𝗹𝗶𝗰𝗸 𝗼𝗻 𝗲𝗮𝗰𝗵 𝗼𝗳 𝘁𝗵𝗲𝗺 𝗯𝗲𝗹𝗼𝘄 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗼  𝗸𝗻𝗼𝘄 𝘁𝗵𝗲𝗺 𝗯𝗲𝘁𝘁𝗲𝗿.</b>
+Click on each one below to get to know them better. .</b>
     """
         AUTH_BUTTONS = [
-    [
-        InlineKeyboardButton("Stripe Auth", callback_data="Auth2"),
-        InlineKeyboardButton("Adyen Auth", callback_data="Adyen2"),
-    ],
-    [
-        InlineKeyboardButton("Braintree B3", callback_data="BRAINTREEB3"),
-        InlineKeyboardButton("Braintree VBV", callback_data="BRAINTREEVBV"),
-    ],
-    [
-        InlineKeyboardButton("Clover Auth", callback_data="CLOVERAUTH"),
-        InlineKeyboardButton("Square Auth", callback_data="SQUAREAUTH"),
-    ],
-    [
-        InlineKeyboardButton("Back", callback_data="HOME"),
-        InlineKeyboardButton("Close", callback_data="close")
-    ]
-]
+            [
+                InlineKeyboardButton("Stripe Auth", callback_data="Auth2"),
+                InlineKeyboardButton("Adyen Auth", callback_data="Adyen2"),
+            ],
+            [
+                InlineKeyboardButton(
+                    "Braintree B3", callback_data="BRAINTREEB3"),
+
+                InlineKeyboardButton(
+                    "Braintree VBV", callback_data="BRAINTREEVBV"),
+            ],
+            [
+                InlineKeyboardButton("Back", callback_data="HOME"),
+                InlineKeyboardButton("Close", callback_data="close")
+            ]
+        ]
         await CallbackQuery.edit_message_text(
             text=AUTH_TEXT,
             reply_markup=InlineKeyboardMarkup(AUTH_BUTTONS))
     if CallbackQuery.data == "Auth2":
         CHARGE_TEXT = """
-🔹 𝗦𝗧𝗥𝗜𝗣𝗘 𝗔𝗨𝗧𝗛 𝗚𝗔𝗧𝗘𝗦 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Stripe Auth Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗦𝘁𝗿𝗶𝗽𝗲 𝗔𝘂𝘁𝗵 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
+👤 Stripe Auth Options:
+   1. Site-Based Auth:
+      ➜ Single: /au cc|mm|yy|cvv ✅
+      ➜ Mass: /mass cc|mm|yy|cvv ✅
 
-   1. 𝗦𝘁𝗿𝗶𝗽𝗲 𝗔𝘂𝘁𝗵:
-     ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /au cc|mm|yy|cvv ✅
-      ➜ 𝗠𝗮𝘀𝘀: /mass cc|mm|yy|cvv ✅
-
-𝗧𝗼𝘁𝗮𝗹 𝗔𝘂𝘁𝗵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
+Total Auth Commands: 1
 
 """
         CHARGE_BUTTON = [
@@ -329,17 +324,17 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "Adyen2":
         CHARGE_TEXT = """
-🔹 𝗔𝗱𝘆𝗲𝗻 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: 𝗔𝗰𝘁𝗶𝘃𝗲 ❌
+🔹 Adyen Auth Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: Inactive ❌
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗔𝗱𝘆𝗲𝗻 𝗔𝘂𝘁𝗵 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗔𝗱𝘆𝗲𝗻 𝗔𝘂𝘁𝗵:
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /ad cc|mm|yy|cvv ❌
-      ➜ 𝗠𝗮𝘀𝘀: /mad cc|mm|yy|cvv ❌
+👤 Adyen Auth Options:
+   1. Adyen Auth:
+      ➜ Single: /ad cc|mm|yy|cvv ❌
+      ➜ Mass: /massad cc|mm|yy|cvv ❌
 
-𝗧𝗼𝘁𝗮𝗹 𝗔𝘂𝘁𝗵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
+Total Auth Commands: 1
 
 """
         CHARGE_BUTTON = [
@@ -354,17 +349,17 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "BRAINTREEVBV":
         CHARGE_TEXT = """
-🔹 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Braintree Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗩𝗕𝗩 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗩𝗕𝗩 𝗟𝗼𝗼𝗸𝘂𝗽 𝗚𝗮𝘁𝗲:
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /vbv cc|mm|yy|cvv ✅
-      ➜ 𝗠𝗮𝘀𝘀 (𝗟𝗶𝗺𝗶𝘁=𝟮𝟱): /mvbv cc|mm|yy|cvv ✅
+👤 Braintree VBV Options:
+   1. VBV Lookup Gate:
+      ➜ Single: /vbv cc|mm|yy|cvv ✅
+      ➜ Mass (Limit=25): /mvbv cc|mm|yy|cvv ✅
 
-𝗧𝗼𝘁𝗮𝗹 𝗔𝘂𝘁𝗵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
+Total Auth Commands: 1
 
 """
         CHARGE_BUTTON = [
@@ -380,23 +375,17 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "BRAINTREEB3":
         CHARGE_TEXT = """
-🔹 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗔𝘂𝘁𝗵 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Braintree B3 of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗔𝘂𝘁𝗵 1 𝗚𝗮𝘁𝗲: ✅
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /chk cc|mm|yy|cvv 
-      ➜ 𝗠𝗮𝘀𝘀 : /mchk cc|mm|yy|cvv        
-   2. 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗔𝘂𝘁𝗵 2 𝗚𝗮𝘁𝗲: ✅
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /b3 cc|mm|yy|cvv 
-      ➜ 𝗠𝗮𝘀𝘀 (𝗟𝗶𝗺𝗶𝘁=25): /mb3 cc|mm|yy|cvv 
-   3. 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗔𝘂𝘁𝗵 3 𝗚𝗮𝘁𝗲: ✅
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /b4 cc|mm|yy|cvv 
-      ➜ 𝗠𝗮𝘀𝘀: /mb4 cc|mm|yy|cvv
-      
-  𝗧𝗼𝘁𝗮𝗹 𝗔𝘂𝘁𝗵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 3  
+👤 Braintree B3 Options:
+   1. Braintree B3 Gate:
+      ➜ Single: /b3 cc|mm|yy|cvv ✅
+      ➜ Mass (Limit=5): /mb3 cc|mm|yy|cvv ✅
+
+Total Commands: 1
 
 """
         CHARGE_BUTTON = [
@@ -409,57 +398,6 @@ async def callback_query(Client, CallbackQuery):
             text=CHARGE_TEXT,
             reply_markup=InlineKeyboardMarkup(CHARGE_BUTTON)
         )
-        
-    if CallbackQuery.data == "SQUAREAUTH":
-        CHARGE_TEXT = """
-🔹 𝗦𝗾𝘂𝗮𝗿𝗲 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ❌ 𝗔𝗰𝘁𝗶𝘃𝗲
-
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
-
-👤 𝗦𝗾𝘂𝗮𝗿𝗲 𝗔𝘂𝘁𝗵 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗦𝗾𝘂𝗮𝗿𝗲 𝗔𝘂𝘁𝗵:
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /sq cc|mm|yy|cvv ❌
-      ➜ 𝗠𝗮𝘀𝘀: /msq cc|mm|yy|cvv ❌
-
-𝗧𝗼𝘁𝗮𝗹 𝗔𝘂𝘁𝗵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
-
-"""
-        CHARGE_BUTTON = [
-            [
-                InlineKeyboardButton("Back", callback_data="AUTH"),
-                InlineKeyboardButton("Close", callback_data="close")
-            ]
-        ]
-        await CallbackQuery.edit_message_text(
-            text=CHARGE_TEXT,
-            reply_markup=InlineKeyboardMarkup(CHARGE_BUTTON)
-        )
-    
-    if CallbackQuery.data == "CLOVERAUTH":
-        CHARGE_TEXT = """
-🔹 𝗖𝗹𝗼𝘃𝗲𝗿 𝗔𝘂𝘁𝗵 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ❌ 𝗔𝗰𝘁𝗶𝘃𝗲
-
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
-
-👤 𝗖𝗹𝗼𝘃𝗲𝗿 𝗔𝘂𝘁𝗵 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗖𝗹𝗼𝘃𝗲𝗿 𝗔𝘂𝘁𝗵:
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /cl cc|mm|yy|cvv ❌
-      ➜ 𝗠𝗮𝘀𝘀: /mcl cc|mm|yy|cvv ❌
-
-𝗧𝗼𝘁𝗮𝗹 𝗔𝘂𝘁𝗵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
-
-"""
-        CHARGE_BUTTON = [
-            [
-                InlineKeyboardButton("Back", callback_data="AUTH"),
-                InlineKeyboardButton("Close", callback_data="close")
-            ]
-        ]
-        await CallbackQuery.edit_message_text(
-            text=CHARGE_TEXT,
-            reply_markup=InlineKeyboardMarkup(CHARGE_BUTTON))
 
 
 
@@ -467,11 +405,11 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "CHARGE":
         CHARGE_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 𝗨𝘀𝗲𝗿!
+<b>Hello User!
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Charge Gates.
 
-𝗖𝗹𝗶𝗰𝗸 𝗼𝗻 𝗲𝗮𝗰𝗵 𝗼𝗳 𝘁𝗵𝗲𝗺 𝗯𝗲𝗹𝗼𝘄 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗼 𝗸𝗻𝗼𝘄 𝘁𝗵𝗲𝗺 𝗯𝗲𝘁𝘁𝗲𝗿.</b>
+Click on each one below to get to know them better. .</b>
     """
         
         CHARGE_BUTTONS = [
@@ -482,9 +420,6 @@ async def callback_query(Client, CallbackQuery):
             [
                 InlineKeyboardButton("Stripe Api", callback_data="SITE"),
                 InlineKeyboardButton("Shopify", callback_data="SHOPIFY"),
-            ],
-            [
-                InlineKeyboardButton("Authnet", callback_data="AUTHNET"),
             ],
             [
                 InlineKeyboardButton("Paypal", callback_data="PAYPAL"),
@@ -499,20 +434,21 @@ async def callback_query(Client, CallbackQuery):
             reply_markup=InlineKeyboardMarkup(CHARGE_BUTTONS))
     if CallbackQuery.data == "PAYPAL":
         CHARGE_TEXT = """
-🔹 𝗣𝗮𝘆𝗣𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ❌ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 PayPal Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ❌ Inactive
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
-👤 𝗣𝗮𝘆𝗣𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗣𝗮𝘆𝗣𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 0.01$: ❌
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /pp cc|mm|yy|cvv [ON] 
-      ➜ 𝗠𝗮𝘀𝘀: /mpp cc|mm|yy|cvv [ON] 
+🚀 Quick Commands Overview:
 
-   2. 𝗣𝗮𝘆𝗣𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 1$: ❌
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /py cc|mm|yy|cvv [OFF] 
-      ➜ 𝗠𝗮𝘀𝘀: /mpy cc|mm|yy|cvv [OFF] 
+👤 PayPal Charge Options:
+   1. PayPal Charge 0.1$:
+      ➜ Single: /pp cc|mm|yy|cvv [ON] ❌
+      ➜ Mass: /mpp cc|mm|yy|cvv [ON] ❌
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 2
+   2. PayPal Charge 1.50$:
+      ➜ Single: /py cc|mm|yy|cvv [OFF] ❌
+      ➜ Mass: /mpy cc|mm|yy|cvv [OFF] ❌
+
+Total Auth Commands: 2
 
 """
         CHARGE_BUTTON = [
@@ -529,11 +465,12 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "SKBASED":
         CHARGE_TEXT = """
-🔹 𝗦𝗧𝗥𝗜𝗣𝗘 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Stripe Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
-👤 𝗦𝘁𝗿𝗶𝗽𝗲 𝗖𝗵𝗮𝗿𝗴𝗲 𝗢𝗽𝘁𝗶𝗼𝗻𝘀: ✅
+🚀 Quick Commands Overview:
+
+👤 Stripe Charge Options:
    1. SK BASED CHARGE 0.5$ CVV:
       ➜ Single: /svv cc|mm|yy|cvv ✅
       ➜ Mass: /msvv cc|mm|yy|cvv ✅
@@ -552,7 +489,7 @@ async def callback_query(Client, CallbackQuery):
       ➜ Mass txt (Limit=3k): /cvvtxt [in reply to file] ✅
       ➜ Self SK also added, check: /selfcmd ✅
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 3
+Total Charge Commands: 3
 
 """
         CHARGE_BUTTON = [
@@ -567,21 +504,17 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "SITE":
         CHARGE_TEXT = """
-🔹 𝗦𝗶𝘁𝗲 𝗕𝗮𝘀𝗲𝗱 𝗔𝗽𝗶 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Site Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
 👤 Site Charge Options:
-   1. 𝗡𝗢𝗡 𝗦𝗞 𝗖𝗩𝗩 5$ 𝗖𝗛𝗔𝗥𝗚𝗘𝗗: ✅
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /sch cc|mm|yy|cvv 
-      ➜ 𝗠𝗮𝘀𝘀: /msch cc|mm|yy|cvv
-      
-   2. 𝗡𝗢𝗡 𝗦𝗞 𝗖𝗩𝗩 5$ 𝗖𝗛𝗔𝗥𝗚𝗘𝗗: ✅
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /st1 cc|mm|yy|cvv 
-      ➜ 𝗠𝗮𝘀𝘀: /mst1 cc|mm|yy|cvv
+   1. SITEBASE 1$ CVV CHARGE:
+      ➜ Single: /chk cc|mm|yy|cvv ✅
+      ➜ Mass: /mchk cc|mm|yy|cvv ✅
 
-   𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 2
+Total Charge Commands: 1
 
 """
         CHARGE_BUTTON = [
@@ -596,17 +529,17 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "BRAINTREE":
         CHARGE_TEXT = """
-🔹 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗖𝗵𝗮𝗿𝗴𝗲 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ❌ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Braintree Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗖𝗵𝗮𝗿𝗴𝗲 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗖𝗵𝗮𝗿𝗴𝗲 1£:
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /br cc|mm|yy|cvv [off]
-      ➜ 𝗠𝗮𝘀𝘀: /mbr cc|mm|yy|cvv [off]
+👤 Braintree Charge Options:
+   1. Braintree Charge 1£:
+      ➜ Single: /br cc|mm|yy|cvv ✅
+      ➜ Mass: /mbr cc|mm|yy|cvv ✅
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
+Total Auth Commands: 1
 
 """
         CHARGE_BUTTON = [
@@ -622,7 +555,7 @@ async def callback_query(Client, CallbackQuery):
     if CallbackQuery.data == "SHOPIFY":
         CHARGE_TEXT = """
 
-🔹 Shopify Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
+🔹 Shopify Charge Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
 🔹 Status: ✅ Active
 
 🚀 Quick Commands Overview:
@@ -644,7 +577,7 @@ async def callback_query(Client, CallbackQuery):
       ➜ Single: /sg cc|mm|yy|cvv ✅
       ➜ Mass: /msg cc|mm|yy|cvv ✅
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 4
+Total Auth Commands: 4
 
 """
         CHARGE_BUTTON = [
@@ -657,38 +590,13 @@ async def callback_query(Client, CallbackQuery):
             text=CHARGE_TEXT,
             reply_markup=InlineKeyboardMarkup(CHARGE_BUTTON)
         )
-    if CallbackQuery.data == "AUTHNET":
-        CHARGE_TEXT = """
-🔹 Authnet Charge 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
-
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
-
-👤 Authnet 𝗖𝗵𝗮𝗿𝗴𝗲 𝗢𝗽𝘁𝗶𝗼𝗻𝘀:
-   1. Authnet 𝗖𝗵𝗮𝗿𝗴𝗲 $3:
-      ➜ 𝗦𝗶𝗻𝗴𝗹𝗲: /nt cc|mm|yy|cvv 
-      
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝗿𝗴𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 1
-
-"""
-        CHARGE_BUTTON = [
-            [
-                InlineKeyboardButton("Back", callback_data="CHARGE"),
-                InlineKeyboardButton("Close", callback_data="close")
-            ]
-        ]
-        await CallbackQuery.edit_message_text(
-            text=CHARGE_TEXT,
-            reply_markup=InlineKeyboardMarkup(CHARGE_BUTTON)
-        )    
-        
     if CallbackQuery.data == "TOOLS":
         TOOLS_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 𝗨𝘀𝗲𝗿!
+<b>Hello User!
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 𝗧𝗼𝗼𝗹𝘀.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Tools.
 
-𝗖𝗹𝗶𝗰𝗸 𝗼𝗻 𝗲𝗮𝗰𝗵 𝗼𝗳 𝘁𝗵𝗲𝗺 𝗯𝗲𝗹𝗼𝘄 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗼 𝗸𝗻𝗼𝘄 𝘁𝗵𝗲𝗺 𝗯𝗲𝘁𝘁𝗲𝗿.</b>
+Click on each one below to get to know them better..</b>
     """
         CHARGE_BUTTONS = [
             [
@@ -712,18 +620,18 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "SKSTOOL":
         CHARGE_TEXT = """
-🔹 𝗦𝗞 𝗧𝗼𝗼𝗹𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 SK Tools of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗦𝗞 𝗧𝗼𝗼𝗹𝘀:
-   1. 𝗦𝗞 𝗞𝗲𝘆 𝗖𝗵𝗲𝗰𝗸𝗲𝗿 𝗚𝗮𝘁𝗲: /sk sk_live_xxxxxx ✅ (𝗟𝗶𝗺𝗶𝘁: 𝗦𝗶𝗻𝗴𝗹𝗲)
-   2. 𝗦𝗞 𝗧𝗼 𝗣𝗞 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿 𝗚𝗮𝘁𝗲: /pk sk_live_xxxxxx ✅ (𝗟𝗶𝗺𝗶𝘁: 𝗦𝗶𝗻𝗴𝗹𝗲)
-   3. 𝗦𝗞 𝗨𝘀𝗲𝗿 𝗖𝗵𝗲𝗰𝗸𝗲𝗿 𝗚𝗮𝘁𝗲: /skuser sk_live_xxxxxx ✅ (𝗟𝗶𝗺𝗶𝘁: 𝗦𝗶𝗻𝗴𝗹𝗲)
-   4. 𝗦𝗞 𝗜𝗻𝗳𝗼 𝗖𝗵𝗲𝗰𝗸𝗲𝗿 𝗚𝗮𝘁𝗲: /skinfo sk_live_xxxxxx ✅ (𝗟𝗶𝗺𝗶𝘁: 𝗦𝗶𝗻𝗴𝗹𝗲)
+👤 SK Tools:
+   1. SK Key Checker Gate: /sk sk_live_xxxxxx ✅ (Limit: Single)
+   2. SK To PK Generator Gate: /pk sk_live_xxxxxx ✅ (Limit: Single)
+   3. SK User Checker Gate: /skuser sk_live_xxxxxx ✅ (Limit: Single)
+   4. SK Info Checker Gate: /skinfo sk_live_xxxxxx ✅ (Limit: Single)
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 4
+Total Auth Commands: 4
 
 """
         CHARGE_BUTTON = [
@@ -738,17 +646,17 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "SCRAPPER":
         CHARGE_TEXT = """
-🔹 𝗦𝗰𝗿𝗮𝗽𝗽𝗲𝗿 𝗧𝗼𝗼𝗹𝘀 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Scrapper Tools Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗦𝗰𝗿𝗮𝗽𝗲𝗿 𝗧𝗼𝗼𝗹𝘀:
-   1. 𝗖𝗖 𝗦𝗰𝗿𝗮𝗽𝗲𝗿 𝗚𝗮𝘁𝗲: /scr channel_username 100 ✅ (𝗟𝗶𝗺𝗶𝘁: 5K)
-   2. 𝗕𝗶𝗻 𝗕𝗮𝘀𝗲𝗱 𝗖𝗖 𝗦𝗰𝗿𝗮𝗽𝗲𝗿 𝗚𝗮𝘁𝗲: /scrbin 440393 channel_username 100 ✅ (𝗟𝗶𝗺𝗶𝘁: 5K)
-   3. 𝗦𝗞 𝗦𝗰𝗿𝗮𝗽𝗲𝗿 𝗚𝗮𝘁𝗲: /scrsk channel_username 100 ✅ (𝗟𝗶𝗺𝗶𝘁: 5K)
+👤 Scraper Tools:
+   1. CC Scraper Gate: /scr channel_username 100 ✅ (Limit: 5K)
+   2. Bin Based CC Scraper Gate: /scrbin 440393 channel_username 100 ✅ (Limit: 5K)
+   3. SK Scraper Gate: /scrsk channel_username 100 ✅ (Limit: 5K)
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 3
+Total Auth Commands: 3
 
 """
         CHARGE_BUTTON = [
@@ -763,16 +671,16 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "GENARATORTOOLS":
         CHARGE_TEXT = """
-🔹 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿 𝗧𝗼𝗼𝗹𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Generator Tools of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿 𝗧𝗼𝗼𝗹𝘀:
-   1. 𝗥𝗮𝗻𝗱𝗼𝗺 𝗖𝗖 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿 𝗚𝗮𝘁𝗲: /gen 440393 500 ✅ (𝗟𝗶𝗺𝗶𝘁: 10k)
-   2. 𝗙𝗮𝗸𝗲 𝗔𝗱𝗱𝗿𝗲𝘀𝘀 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗼𝗿 𝗚𝗮𝘁𝗲: /fake us ✅
+👤 Generator Tools:
+   1. Random CC Generator Gate: /gen 440393 500 ✅ (Limit: 10k)
+   2. Fake Address Generator Gate: /fake us ✅
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 2
+Total Auth Commands: 2
 
 """
         CHARGE_BUTTON = [
@@ -787,22 +695,22 @@ async def callback_query(Client, CallbackQuery):
         )
     if CallbackQuery.data == "BINANDOTHERS":
         CHARGE_TEXT = """
-🔹 𝗕𝗶𝗻 𝗮𝗻𝗱 𝗢𝘁𝗵𝗲𝗿 𝗧𝗼𝗼𝗹𝘀 𝗢𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Bin and Other Tools Of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 𝗖𝗵𝗲𝗰𝗸𝗲𝗿𝘀:
-   1. 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 𝗖𝗵𝗲𝗰𝗸𝗲𝗿 𝗚𝗮𝘁𝗲: /bin 440393 ✅ (𝗦𝗶𝗻𝗴𝗹𝗲 𝗟𝗶𝗺𝗶𝘁)
-   2. 𝗧𝗲𝘅𝘁 𝗧𝗼 𝗖𝗖 𝗙𝗶𝗹𝘁𝗲𝗿 𝗚𝗮𝘁𝗲: /fl [in reply to text] ✅
-   3. 𝗠𝗮𝘀𝘀 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 𝗖𝗵𝗲𝗰𝗸𝗲𝗿 𝗚𝗮𝘁𝗲: /massbin 440393 ❌ (𝗟𝗶𝗺𝗶𝘁: 30)
+👤 BIN Information:
+   1. BIN Info Checker Gate: /bin 440393 ✅ (Single Limit)
+   2. Text To CC Filter Gate: /fl [in reply to text] ✅
+   3. Mass BIN Info Checker Gate: /massbin 440393 ❌ (Limit: 30)
 
-💡 𝗔𝗱𝗱𝗶𝘁𝗶𝗼𝗻𝗮𝗹 𝗧𝗼𝗼𝗹𝘀:
-   4. 𝗜𝗣 𝗟𝗼𝗼𝗸𝘂𝗽 𝗚𝗮𝘁𝗲: /ip your_ip ✅
-   5. 𝗚𝗮𝘁𝗲𝘄𝗮𝘆𝘀 𝗛𝘂𝗻𝘁𝗲𝗿 𝗚𝗮𝘁𝗲: /url website_url ✅ (𝗟𝗶𝗺𝗶𝘁: 20)
-   6. 𝗚𝗣𝗧-𝟰: /gpt Promote ❌
+💡 Additional Tools:
+   4. IP Lookup Gate: /ip your_ip ✅
+   5. Gateways Hunter: /url website_url ✅ (Limit: 20)
+   6. GPT-4: /gpt Promote ❌
 
-𝗧𝗼𝘁𝗮𝗹  𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 6
+Total Auth Commands: 6
 
 
 """
@@ -820,11 +728,11 @@ async def callback_query(Client, CallbackQuery):
 
     if CallbackQuery.data == "HELPER":
         HELPER_TEXT = f"""
-<b>𝗛𝗲𝗹𝗹𝗼 𝗨𝘀𝗲𝗿!
+<b>Hello User!
 
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 𝗛𝗲𝗹𝗽𝗲𝗿.
+𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️  Helper.
 
-𝗖𝗹𝗶𝗰𝗸 𝗼𝗻 𝗲𝗮𝗰𝗵 𝗼𝗳 𝘁𝗵𝗲𝗺 𝗯𝗲𝗹𝗼𝘄 𝘁𝗼 𝗴𝗲𝘁 𝘁𝗼 𝗸𝗻𝗼𝘄 𝘁𝗵𝗲𝗺 𝗯𝗲𝘁𝘁𝗲𝗿.</b>
+Click on each one below to get to know them better.</b>
     """
         CHARGE_BUTTONS = [
             [
@@ -841,30 +749,30 @@ async def callback_query(Client, CallbackQuery):
             reply_markup=InlineKeyboardMarkup(CHARGE_BUTTONS))
     if CallbackQuery.data == "INFO":
         CHARGE_TEXT = """
-🔹 𝗛𝗲𝗹𝗽𝗲𝗿 𝗚𝗮𝘁𝗲𝘀 𝗼𝗳 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️
-🔹 𝗦𝘁𝗮𝘁𝘂𝘀: ✅ 𝗔𝗰𝘁𝗶𝘃𝗲
+🔹 Helper Gates of 𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ 
+🔹 Status: ✅ Active
 
-🚀 𝗤𝘂𝗶𝗰𝗸 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗢𝘃𝗲𝗿𝘃𝗶𝗲𝘄:
+🚀 Quick Commands Overview:
 
-👤 𝗔𝗰𝗰𝗼𝘂𝗻𝘁 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁:
-   1. 𝗦𝘁𝗮𝗿𝘁 𝗕𝗼𝘁: /start@tevixlcheckerbot
-   2. 𝗥𝗲𝗴𝗶𝘀𝘁𝗲𝗿: /register
-   3. 𝗨𝘀𝗲𝗿 𝗜𝗗: /id
-   4. 𝗨𝘀𝗲𝗿 𝗜𝗻𝗳𝗼: /info
-   5. 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: /credits
+👤 Account Management:
+   1. Start Bot: /start
+   2. Register: /register
+   3. User ID: /id
+   4. User Info: /info
+   5. Credits Balance: /credits
 
-💡 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 & 𝗣𝗿𝗲𝗺𝗶𝘂𝗺𝘀:
-   6. 𝗖𝗿𝗲𝗱𝗶𝘁𝘀 𝗦𝘆𝘀𝘁𝗲𝗺: /howcrd
-   7. 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗣𝗿𝗶𝘃𝗶𝗹𝗲𝗴𝗲𝘀: /howpm
-   8. 𝗕𝘂𝘆 𝗣𝗿𝗲𝗺𝗶𝘂𝗺: /buy
+💡 Credits & Premiums:
+   6. Credits System: /howcrd
+   7. Premium Privileges: /howpm
+   8. Buy Premium: /buy
 
-👥 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆 𝗧𝗼𝗼𝗹𝘀:
-   9. 𝗔𝗱𝗱 𝘁𝗼 𝗚𝗿𝗼𝘂𝗽: /howgp
+👥 Community Tools:
+   9. Add to Group: /howgp
 
-📡 𝗧𝗲𝗰𝗵 𝗦𝘂𝗽𝗽𝗼𝗿𝘁:
-   10. 𝗣𝗶𝗻𝗴 𝗦𝘁𝗮𝘁𝘂𝘀: /ping
+📡 Tech Support:
+   10. Ping Status: /ping
 
-𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: 10
+Total Commands: 10
 
         """
 
