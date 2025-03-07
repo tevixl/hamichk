@@ -84,7 +84,7 @@ def send_server_alert():
     process_id = os.getpid()
 
     stats = f"""<b>
-𝐓𝐞𝐯𝐢 𝐂𝐡𝐞𝐜𝐤𝐞𝐫✘🕷️ ( @tevixlcheckerbot ) 
+MASTER Checker ⚡️ ( @PharaohxRobot ) 
 
 Bot Deployed Successfully ✅
 
@@ -102,4 +102,4 @@ Process ID: <code>{process_id}</code>
     </b>"""
     stats = urllib.parse.quote_plus(stats)
 
-    httpx.get(f"https://api.telegram.org/bot-8119208008:AAGDhLJa5lSsxtwQWtVq-Uzgv8FVlbIt2AY/sendMessage?chat_id=7447317982&text={stats}&parse_mode=HTML&disable_web_page_preview=True")
+    httpx.get(f"https://api.telegram.org/bot6571774499:AAH4AM40scx3I-FI9yuoeievS1YBdqliVHk/sendMessage?chat_id=6745804180&text={stats}&parse_mode=HTML&disable_web_page_preview=True")
