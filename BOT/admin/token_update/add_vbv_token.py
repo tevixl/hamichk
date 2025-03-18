@@ -16,7 +16,7 @@ Contact Bot Owner @tevixl !</b>"""
             return
 
         VBV_TOKEN = str(message.reply_to_message.text).split('"dfReferenceId":"')[1].split('"')[0]
-        await update_token("8119208008:AAGDhLJa5lSsxtwQWtVq-Uzgv8FVlbIt2AY", VBV_TOKEN)
+        await update_token("8119208008:AAFM87ETb4BC9anJltf4b9VXAuu7m4B69d8", VBV_TOKEN)
 
         resp = f"""<b>
 VBV_TOKEN Successfully Added ✅
