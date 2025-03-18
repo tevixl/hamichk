@@ -18,7 +18,7 @@ Contact Bot Owner @tevixl !</b>"""
             return
 
         AUTH_TOKEN = str(message.reply_to_message.text)
-        await update_api_token("8119208008:AAGDhLJa5lSsxtwQWtVq-Uzgv8FVlbIt2AY", AUTH_TOKEN)
+        await update_api_token("8119208008:AAFM87ETb4BC9anJltf4b9VXAuu7m4B69d8", AUTH_TOKEN)
 
         resp = f"""<b>
 Auth API Token Successfully Added ✅
